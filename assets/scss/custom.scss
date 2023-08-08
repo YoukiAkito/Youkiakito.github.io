@@ -1,0 +1,21 @@
+
+//友链列表改为三栏
+@media (min-width: 1024px) {
+	.article-list--compact.links {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		background: none;
+		box-shadow: none;
+		gap: 1rem;
+
+		article {
+            .article-image img {
+                border-radius:50%;
+            }
+			background: var(--card-background);
+			border: none;
+			box-shadow: var(--shadow-l2);
+			border-radius: var(--card-border-radius);
+		}
+	}
+}
