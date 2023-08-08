@@ -1,0 +1,2577 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 璃沫莫的小木屋</title><link>https://youkiakito.github.io/post/</link><description>Recent content in Posts on 璃沫莫的小木屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://youkiakito.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>前端笔记</title><link>https://youkiakito.github.io/p/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</link><pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</guid><description>&lt;p>&lt;code>window.history.go(-1)&lt;/code>和&lt;code>window.location.go(-1)&lt;/code> 虽然都是回到上一页,但是：&lt;br>
+&lt;code>window.history.go(-1)&lt;/code>是返回上一页
+&lt;code>window.location.go(-1)&lt;/code>是刷新上一页&lt;/p>
+&lt;p>&lt;code>history.back(-1)&lt;/code>:直接返回当前页的上一页，数据全部消息，是个新页面&lt;/p>
+&lt;p>&lt;code>history.go(-1)&lt;/code>:也是返回当前页的上一页，不过表单里的数据全部还在&lt;/p>
+&lt;p>&lt;code>history.back(1)&lt;/code>前进
+&lt;code>history.back(-1)&lt;/code>后退&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">window.location.reload(); //刷新
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">window.history.go(1); //前进
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">window.history.go(-1); //返回+刷新
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">window.history.forward(); //前进
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">window.history.back(); //返回
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">window.location.href = &amp;#34;https://fanyi.youdao.com/index.html#/&amp;#34;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">window.history.back(-1); //返回上一页面
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//点击id为button的按钮跳转
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">document.getElementById(&amp;#34;button&amp;#34;).onclick = function () {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> window.open(&amp;#34;https://fanyi.youdao.com/index.html#/&amp;#34;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">};
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>好好的</title><link>https://youkiakito.github.io/p/%E5%A5%BD%E5%A5%BD%E7%9A%84/</link><pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/%E5%A5%BD%E5%A5%BD%E7%9A%84/</guid><description>&lt;p>你一定要好好的，我确实很爱你，但是也没办法放下一切，从九月以后，我从来不想说出口的，也不想承认的爱你。我不知道怎么面对，我告诉所有人这都过去了。现在我只想你好好的，我忘不了，也不想再去伤害任何人，也包括你。&lt;/p>
+&lt;p>我不管谁是否值得我托付，但是能做的我都做了，我只希望，未来的我，保护好自己，好好生活，不伤害任何人，快乐的生活，就够了，至于爱情，适合就好。&lt;/p>
+&lt;p>我想，以后你是一个快乐的人，即使你把我忘了，也快乐就好，不管是男生还是女生，你都是你。&lt;/p>
+&lt;p>其实病态的不止只有你，我也是，我也会不经意间的伤害你，你也一样，所以，我们彼此都在自己的世界里才是最好的。我永远把我爱的人藏在心窝里，你也一样。&lt;/p>
+&lt;p>希望你会好，以后有个工作，可以让你妈妈开心一点。回不到起点了，我们最终都是有心理疙瘩的。&lt;/p>
+&lt;p>——你听听&lt;/p></description></item><item><title>MAC下安装Docker</title><link>https://youkiakito.github.io/p/mac%E4%B8%8B%E5%AE%89%E8%A3%85docker/</link><pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/mac%E4%B8%8B%E5%AE%89%E8%A3%85docker/</guid><description>&lt;h1 id="安装">安装&lt;/h1>
+&lt;h2 id="使用homebrew安装">使用Homebrew安装&lt;/h2>
+&lt;p>macOS 我们可以使用 Homebrew 来安装 Docker。&lt;br>
+Homebrew 的 Cask 已经支持 Docker for Mac，因此可以很方便的使用 Homebrew Cask 来进行安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">brew install --cask --appdir=/Applications docker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>安装完成后，载入Docker app后，点击next，出现询问MAC登陆密码的对话框，输入即可。之后会弹出一个 Docker 运行的提示窗口，状态栏上也有有个小鲸鱼的图标（&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.1/img/docker-logo.png"
+loading="lazy"
+>）。&lt;/p>
+&lt;hr>
+&lt;h2 id="手动下载安装">手动下载安装&lt;/h2>
+&lt;p>如果需要手动下载，请点击以下链接下载 &lt;a class="link" href="https://docs.docker.com/docker-for-mac/install/" target="_blank" rel="noopener"
+>Install Docker Desktop on Mac&lt;/a>&lt;br>
+下载完成后，双击下载的&lt;code>.dmg&lt;/code>文件，然后将鲸鱼图标拖拽到&lt;code>Application&lt;/code>文件夹即可&lt;/p>
+&lt;p>之后点击顶部状态栏中的鲸鱼图标后会弹出操作菜单&lt;/p>
+&lt;p>启动终端后，可以通过以下命令查看安装的Docker版本&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker --version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>MAC下为Docker配置镜像加速</title><link>https://youkiakito.github.io/p/mac%E4%B8%8B%E4%B8%BAdocker%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</link><pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/mac%E4%B8%8B%E4%B8%BAdocker%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid><description>&lt;blockquote>
+&lt;p>由于众所周知的原因，国内拉去Docker镜像十分缓慢，我们可以通过配置国内的镜像加速来解决&lt;/p>
+&lt;/blockquote>
+&lt;p>这里我是使用的是科大的镜像地址:&lt;code>https://docker.mirrors.ustc.edu.cn/&lt;/code>&lt;/p>
+&lt;p>除了科大意外，这里还推荐以下几个镜像地址：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">网易：https://hub-mirror.c.163.com/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">阿里云：https://&amp;lt;你的ID&amp;gt;.mirror.aliyuncs.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>其中，阿里云镜像地址需要到这里去获取：&lt;a class="link" href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors" target="_blank" rel="noopener"
+>阿里云镜像获取地址&lt;/a>，登陆阿里云账号后，在左侧菜单选中镜像加速器就可以看到你的专属地址了&lt;/p>
+&lt;blockquote>
+&lt;p>当配置某一个加速器地址之后，若发现拉取不到镜像，请切换到另一个加速器地址。国内各大云服务商均提供了 Docker 镜像加速服务，建议根据运行 Docker 的云平台选择对应的镜像加速服务。&lt;/p>
+&lt;/blockquote>
+&lt;p>我们可以多添加几个国内的镜像，如果有不能使用的，会切换到可以使用个的镜像来拉取。&lt;/p>
+&lt;h1 id="macos配置镜像加速">macOS配置镜像加速&lt;/h1>
+&lt;p>对于mac用户，版本4.0.0(67817)，需要打开Docker Hub界面，然后在设置界面选中&lt;code>Docker Engine&lt;/code>&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.1/img/docker-setting.png"
+loading="lazy"
+>&lt;br>
+之后，在&lt;code>&amp;quot;debug&amp;quot;&lt;/code>语句后，添加&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;registry-mirrors&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://docker.mirrors.ustc.edu.cn/&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://hub-mirror.c.163.com/&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后点击右下角Apply &amp;amp; Restart，镜像加速就配置完毕了。&lt;/p>
+&lt;blockquote>
+&lt;p>注意：在以下语句中&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;registry-mirrors&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://docker.mirrors.ustc.edu.cn/&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://hub-mirror.c.163.com/&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>[]&lt;/code>内需要配置几个镜像加速地址，就按照以上格式写几个&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="检查镜像加速是否生效">检查镜像加速是否生效&lt;/h1>
+&lt;p>如果拉取镜像仍然十分缓慢，请手动检查加速器配置是否生效，在命令行执行 docker info，如果从结果中看到了如下内容，说明配置成功&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; docker info
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Registry Mirrors:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> https://reg-mirror.qiniu.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Python3基本数据类型</title><link>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link><pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid><description>&lt;h1 id="变量">变量&lt;/h1>
+&lt;ul>
+&lt;li>Python中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。&lt;/li>
+&lt;li>在Python中，变量就是变量，它没有类型，我们所说的&amp;quot;类型&amp;quot;是变量所指的内存中对象的类型。&lt;/li>
+&lt;li>等号&lt;code>=&lt;/code>用来给变量赋值。&lt;/li>
+&lt;/ul>
+&lt;h2 id="多个变量赋值">多个变量赋值&lt;/h2>
+&lt;p>Python允许同时为多个变量赋值&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a = b = c = 1 #为多个对象赋予同一个值
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a = b = c = 1，2，&amp;#34;blog&amp;#34; #为多个对象赋予多个变量
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h1 id="标准数据类型">标准数据类型&lt;/h1>
+&lt;blockquote>
+&lt;ul>
+&lt;li>不可变数据（3 个）：Number（数字）、String（字符串）、Tuple（元组）&lt;/li>
+&lt;li>可变数据（3 个）：List（列表）、Dictionary（字典）、Set（集合）&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h2 id="number数字">Number（数字）&lt;/h2>
+&lt;p>Python3 支持 int、float、bool、complex（复数）。&lt;/p>
+&lt;p>在Python 3里，只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。&lt;/p>
+&lt;p>像大多数语言一样，数值类型的赋值和计算都是很直观的。&lt;/p>
+&lt;p>内置的 type() 函数可以用来查询变量所指的对象类型。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#输入
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a, b, c, d = 20, 5.5, True, 4+3j
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(type(a), type(b), type(c), type(d))
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#输出
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;class &amp;#39;int&amp;#39;&amp;gt; &amp;lt;class &amp;#39;float&amp;#39;&amp;gt; &amp;lt;class &amp;#39;bool&amp;#39;&amp;gt; &amp;lt;class &amp;#39;complex&amp;#39;&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>也可以用 isinstance 来判断：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a = 111
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">isinstance(a, int)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>isinstance 和 type 的区别在于：&lt;/p>
+&lt;ul>
+&lt;li>type()不会认为子类是一种父类类型。&lt;/li>
+&lt;li>isinstance()会认为子类是一种父类类型。&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>认为也可以理解为是否使用继承类型&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">class A:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">... pass
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; class B(A):
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">... pass
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; isinstance(A(), A)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; type(A()) == A
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; isinstance(B(), A)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; type(B()) == A
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">False
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>注意：Python3中，bool是int的子类，True和False可以和数字相加，True==1、False==0会返回True，但可以通过&lt;code>is&lt;/code>来判断类型。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">issubclass(bool, int)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> True==1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> False==0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> True+1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> False+1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 is True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">False
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 is False
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">False
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;p>当你指定一个值时，Number 对象就会被创建：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">var1 = 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">var2 = 10
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>也可以使用del语句删除一些对象引用。&lt;br>
+del语句的语法是：&lt;code>del var1[,var2[,var3[....,varN]]]&lt;/code>&lt;br>
+可以通过使用del语句删除单个或多个对象。例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">del var
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">del var_a, var_b
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="数值运算">数值运算&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 5 + 4 # 加法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">9
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 4.3 - 2 # 减法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2.3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 3 * 7 # 乘法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">21
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 2 / 4 # 除法，得到一个浮点数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0.5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 2 // 4 # 除法，得到一个整数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 17 % 3 # 取余
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 2 ** 5 # 乘方
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">32
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>注意：在混合计算时，Python会把整型转换成为浮点数。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="string字符串">String（字符串）&lt;/h2>
+&lt;p>Python中的字符串用单引号&lt;code>'&lt;/code>或双引号&lt;code>&amp;quot;&lt;/code>括起来，同时使用反斜杠&lt;code>\&lt;/code>转义特殊字符。&lt;br>
+字符串的截取的语法格式为：&lt;code>变量[头下标:尾下标]&lt;/code>&lt;br>
+以&lt;code>0&lt;/code>为开始值，&lt;code>-1&lt;/code>为从末尾的开始位置&lt;/p>
+&lt;p>加号&lt;code>+&lt;/code>是字符串的连接符，星号&lt;code>*&lt;/code>表示复制当前字符串，与之结合的数字为复制的次数&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">str = &amp;#39;Runoob&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str) # 输出字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[0:-1]) # 输出第一个到倒数第二个的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[0]) # 输出字符串第一个字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[2:5]) # 输出从第三个开始到第五个的字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[2:]) # 输出从第三个开始的后的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str * 2) # 输出字符串两次，也可以写成 print (2 * str)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str + &amp;#34;TEST&amp;#34;) # 连接字符串
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>执行后输出&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Runoob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Runoo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">R
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">noo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">noob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">RunoobRunoob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">RunoobTEST
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="list列表">List（列表）&lt;/h2>
+&lt;blockquote>
+&lt;ul>
+&lt;li>List（列表） 是 Python 中使用最频繁的数据类型。&lt;/li>
+&lt;li>列表可以完成大多数集合类的数据结构实现。列表中元素的类型可以不相同，它支持数字，字符串甚至可以包含列表（所谓嵌套）。&lt;/li>
+&lt;li>列表是写在方括号 [] 之间、用逗号分隔开的元素列表。&lt;/li>
+&lt;li>和字符串一样，列表同样可以被索引和截取，列表被截取后返回一个包含所需元素的新列表。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>列表截取的语法格式为：&lt;code>变量[头下标:尾下标]&lt;/code>&lt;br>
+加号&lt;code>+&lt;/code>是列表连接运算符，星号&lt;code>*&lt;/code>是重复操作,如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">list = [ &amp;#39;abcd&amp;#39;, 786 , 2.23, &amp;#39;runoob&amp;#39;, 70.2 ]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tinylist = [123, &amp;#39;runoob&amp;#39;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list) # 输出完整列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list[0]) # 输出列表第一个元素
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list[1:3]) # 从第二个开始输出到第三个元素
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list[2:]) # 输出从第三个元素开始的所有元素
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (tinylist * 2) # 输出两次列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list + tinylist) # 连接列表
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>执行后输出：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[&amp;#39;abcd&amp;#39;, 786, 2.23, &amp;#39;runoob&amp;#39;, 70.2]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">abcd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[786, 2.23]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[2.23, &amp;#39;runoob&amp;#39;, 70.2]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[123, &amp;#39;runoob&amp;#39;, 123, &amp;#39;runoob&amp;#39;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[&amp;#39;abcd&amp;#39;, 786, 2.23, &amp;#39;runoob&amp;#39;, 70.2, 123, &amp;#39;runoob&amp;#39;]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>注意：与字符串不同，列表中的元素是可以改变的&lt;br>
+🌰&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a = [1, 2, 3, 4, 5, 6]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a[0] = 9
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a[2:5] = [13, 14, 15]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[9, 2, 13, 14, 15, 6]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a[2:5] = [] # 将对应的元素值设置为 []
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[9, 2, 6]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;p>要点：&lt;/p></description></item><item><title>Python3基本语法</title><link>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;h1 id="指定编码">指定编码&lt;/h1>
+&lt;p>&lt;code># -*- coding: utf-8 -*-&lt;/code>&lt;/p>
+&lt;h1 id="标识符">标识符&lt;/h1>
+&lt;ol>
+&lt;li>第一个字符需要是字母或下划线&lt;code>_&lt;/code>&lt;/li>
+&lt;li>其他部分可以是数字、字母或下划线&lt;code>_&lt;/code>&lt;/li>
+&lt;li>大小写敏感&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>注意：Python3中可以用中文名作为变量，非ASCII字符也是允许的&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="保留字">保留字&lt;/h1>
+&lt;p>Python标准库里有一个keyword模块，可以输出当前版本的所有保留字：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import keyword
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keyword.kwlist
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="注释">注释&lt;/h1>
+&lt;h2 id="单行注释">单行注释&lt;/h2>
+&lt;p>使用&lt;code>#&lt;/code>字符，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#wdnmd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#34;wdnmd&amp;#34;) #这是一个注释
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="多行注释">多行注释&lt;/h2>
+&lt;p>使用&lt;code>‘’‘&lt;/code>或&lt;code>“”“&lt;/code>，用法类似于markdown的代码语法：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#wd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#nmd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#34;wdnmd&amp;#34;) #这是一个注释
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;&amp;#39;&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第一行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第二行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">‘’‘
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">“”“
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第一行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第二行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">”“”
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="代码块">代码块&lt;/h1>
+&lt;p>Python使用缩进来表示代码块，不需要使用&lt;code>{}&lt;/code>。
+缩进的空格数可变，但同一个代码块的缩进必须相同，否则会报错&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">if True:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;True&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">else:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;False&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">if True:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;Answer&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;True&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">else:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;Answer&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;False&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="语句">语句&lt;/h1>
+&lt;h2 id="多行语句">多行语句&lt;/h2>
+&lt;p>通常是一行写完一条语句，但是如果语句很长，可以使用反斜杠&lt;code>\&lt;/code>来实现多行语句&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">total = item_one + \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> item_two + \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> item_three
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>如果多行语句位于&lt;code>[]``{}``()&lt;/code>中，不需要使用&lt;code>\&lt;/code>，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">total = [&amp;#39;item_one&amp;#39;, &amp;#39;item_two&amp;#39;, &amp;#39;item_three&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#39;item_four&amp;#39;, &amp;#39;item_five&amp;#39;]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;h2 id="单行多条语句">单行多条语句&lt;/h2>
+&lt;p>在同一行中使用多条语句，语句之间使用分号&lt;code>;&lt;/code>分割，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import sys; x = &amp;#39;runoob&amp;#39;; sys.stdout.write(x + &amp;#39;\n&amp;#39;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>这里按标准写法应该为：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import sys
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">x = &amp;#39;runoob&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sys.stdout.write(x + &amp;#39;\n&amp;#39;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;h1 id="number类型">Number类型&lt;/h1>
+&lt;p>int(整型)：如1，表示为长整型&lt;br>
+bool(布尔)：如True、False&lt;br>
+float(浮点)：如1.23、3E-2&lt;br>
+complex(复数)：如1 + 2j、1.1 + 2.2j&lt;/p>
+&lt;h1 id="string类型">String类型&lt;/h1>
+&lt;ul>
+&lt;li>Python中的单引号&lt;code>'&lt;/code>和双引号&lt;code>&amp;quot;&lt;/code>使用完全相同&lt;/li>
+&lt;li>转义符&lt;code>\&lt;/code>&lt;/li>
+&lt;li>反斜杠可以用来转义，使用r可以让反斜杠不发生转义。如&lt;code>r&amp;quot;this is a line with \n&amp;quot;&lt;/code>则\n会显示，并不是换行。&lt;/li>
+&lt;li>按字面意义级联字符串，如&amp;quot;this &amp;quot; &amp;ldquo;is &amp;quot; &amp;ldquo;string&amp;quot;会被自动转换为&lt;code>this is string&lt;/code>。&lt;/li>
+&lt;li>字符串可以用&lt;code>+&lt;/code>运算符连接在一起，用&lt;code>*&lt;/code>运算符重复。&lt;/li>
+&lt;li>Python中的字符串有两种索引方式，从左往右以&lt;code>0&lt;/code>开始，从右往左以&lt;code>-1&lt;/code>开始。&lt;/li>
+&lt;li>Python中的字符串不能改变。&lt;/li>
+&lt;li>Python没有单独的字符类型，一个字符就是长度为 1 的字符串。&lt;/li>
+&lt;li>字符串的截取的语法格式如下：&lt;code>变量[头下标:尾下标:步长]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">word = &amp;#39;字符串&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sentence = &amp;#34;这是一个句子。&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">paragraph = &amp;#34;&amp;#34;&amp;#34;这是一个段落，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 可以由多行组成&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>举个🌰&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">str=&amp;#39;123456789&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str) # 输出字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[0:-1]) # 输出第一个到倒数第二个的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[0]) # 输出字符串第一个字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[2:5]) # 输出从第三个开始到第五个的字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[2:]) # 输出从第三个开始后的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[1:5:2]) # 输出从第二个开始到第五个且每隔一个的字符（步长为2）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str * 2) # 输出字符串两次
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str + &amp;#39;你好&amp;#39;) # 连接字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;------------------------------&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;hello\nrunoob&amp;#39;) # 使用反斜杠(\)+n转义特殊字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(r&amp;#39;hello\nrunoob&amp;#39;) # 在字符串前面添加一个 r，表示原始字符串，不会发生转义
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出结果为&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">123456789
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">12345678
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">345
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3456789
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">24
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">123456789123456789
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">123456789你好
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">------------------------------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hello
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">runoob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hello\nrunoob
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="空行">空行&lt;/h1>
+&lt;p>函数之间或类的方法之间用空行分隔，表示一段新的代码的开始。类和函数入口之间也用一行空行分隔，以突出函数入口的开始。&lt;/p>
+&lt;p>空行与代码缩进不同，空行并不是Python语法的一部分。书写时不插入空行，Python解释器运行也不会出错。但是空行的作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。&lt;/p>
+&lt;blockquote>
+&lt;p>记住：空行也是程序代码的一部分。&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="等待用户输入">等待用户输入&lt;/h1>
+&lt;p>执行以下程序会在按&lt;code>enter&lt;/code>键后等待用户输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">input(&amp;#34;\n\n按下 enter 键后退出。&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>&amp;ldquo;\n\n&amp;quot;在结果输出前会输出两个新的空行。一旦用户再次按下 enter 键时，程序将退出。&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="print输出">print输出&lt;/h1>
+&lt;p>print默认是换行输出的，如不需要换行需要在变量末尾加上&lt;code>end=“ ”&lt;/code>&lt;br>
+执行程序：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">x=&amp;#34;a&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">y=&amp;#34;b&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 换行输出
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( x )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( y )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;---------&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 不换行输出
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( x, end=&amp;#34; &amp;#34; )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( y, end=&amp;#34; &amp;#34; )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">b
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a b
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="导入模块">导入模块&lt;/h1>
+&lt;p>使用&lt;code>import&lt;/code>或者&lt;code>from...import&lt;/code>来导入相应模块&lt;br>
+&lt;code>import&lt;/code>用于导入整个模块，如：&lt;code>import somemodule&lt;/code>&lt;br>
+&lt;code>from...import&lt;/code>用于倒入模块中的部分函数，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-v" data-lang="v">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">from&lt;/span> &lt;span class="nv">somemodule&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="nv">somefunction&lt;/span> &lt;span class="cp">#导入单个函数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">from&lt;/span> &lt;span class="nv">somemodule&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="nv">somefunction1&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nv">somefunction2&lt;/span> &lt;span class="cp">#导入多个函数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">from&lt;/span> &lt;span class="nv">somemodule&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="cp">#导入全部函数&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>来个程序🌰看看：&lt;/p>
+&lt;blockquote>
+&lt;p>这是导入sys模块，引用&lt;code>argv&lt;/code>和&lt;code>path&lt;/code>时需要在前面加&lt;code>sys.&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import sys
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;================Python import mode==========================&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#39;命令行参数为:&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">for i in sys.argv:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (i)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#39;\n python 路径为&amp;#39;,sys.path)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>这是导入sys模块中的&lt;code>argv&lt;/code>和&lt;code>path&lt;/code>，所以不需要在前面加&lt;code>sys.&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">from sys import argv,path # 导入特定的成员
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;================python from import===================================&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;path:&amp;#39;,path)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="命令行参数">命令行参数&lt;/h1>
+&lt;p>Python可以使用-h参数查看各参数帮助信息，在终端中执行&lt;code>python -h&lt;/code>即可&lt;/p></description></item><item><title>安装Anaconda</title><link>https://youkiakito.github.io/p/%E5%AE%89%E8%A3%85anaconda/</link><pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/%E5%AE%89%E8%A3%85anaconda/</guid><description>&lt;blockquote>
+&lt;p>关于Anaconda：Anaconda指的是一个开源的Python发行版本，其包含了conda、Python等180多个科学包及其依赖项。因为包含了大量的科学包，Anaconda 的下载文件比较大（约 531 MB），如果只需要某些包，或者需要节省带宽或存储空间，也可以使用Miniconda这个较小的发行版（仅包含conda和 Python）。&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="安装anaconda">安装Anaconda&lt;/h1>
+&lt;h2 id="1下载anaconda">1.下载Anaconda&lt;/h2>
+&lt;p>这里使用清华大学的源会快一些&lt;br>
+&lt;a class="link" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&amp;amp;O=D" target="_blank" rel="noopener"
+>https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&amp;O=D&lt;/a>&lt;br>
+进去之后根据需要的架构选择安装包，然后复制下载链接，在云服务器中进行下载&lt;br>
+&lt;code>yum install -y wget &amp;amp;&amp;amp; wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2021.05-Linux-x86_64.sh&lt;/code>&lt;/p>
+&lt;h2 id="2安装anaconda">2.安装Anaconda&lt;/h2>
+&lt;p>在下载目录中执行下载的文件，这里记得使用命令&lt;code>ls&lt;/code>查看所下载文件的名字，然后执行&lt;br>
+&lt;code>bash Anaconda3-2021.05-Linux-x86_64.sh&lt;/code>&lt;br>
+之后会有很长的License许可声明，一直回车直到出现以下文字&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Do you accept the license terms? [yes|no]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[no] &amp;gt;&amp;gt;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Please answer &amp;#39;yes&amp;#39; or &amp;#39;no&amp;#39;:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; yes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>之后要选择安装目录，如果无需更改直接回车Enter，如需更改要输入绝对路径（可以先查看下硬盘的挂载情况再自行选择安装目录，查看挂载情况的语句是df -h）:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Anaconda3 will now be installed into this location:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/root/anaconda3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Press ENTER to confirm the location
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Press CTRL-C to abort the installation
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Or specify a different location below
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[/root/anaconda3] &amp;gt;&amp;gt;&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>之后问是否需要进行conda的初始化，我选择yes，是在/root/.bashrc目录中自动添加环境变量，会使得开机自动启动base环境。（这里应该是新版安装包的改动之处，老版本的安装包都是问是否需要添加conda至环境变量，且默认直接回车Enter是不添加，若未添加后续需要手动添加。）不过我选了yes之后使用&lt;code>conda activate&lt;/code>显示如下&lt;br>
+&lt;code>-bash: conda: command not foun&lt;/code>&lt;br>
+这个应该是环境变量的锅，所以还要配置下，之后会说&lt;/p>
+&lt;/blockquote>
+&lt;p>看到如下提示则安装成功：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Thank you for installing Anaconda3!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">===========================================================================
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Anaconda and JetBrains are working together to bring you Anaconda-powered
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">environments tightly integrated in the PyCharm IDE.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PyCharm for Anaconda is available at:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">https://www.anaconda.com/pycharm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后手动配置下环境变量&lt;br>
+&lt;code>vi /etc/profile&lt;/code>&lt;br>
+在文件最后加入如下语句（路径需要根据自己的安装位置更改）：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">PATH=$PATH:/root/anaconda3/bin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">export PATH
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>按住shift键+:键，输入wq，保存文件并退出。最后使用如下命令刷新环境变量即可(不刷新可能无法生效)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">source /etc/profile
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo $PATH
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最后就可以使用Anaconda的环境了&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate # 进入conda环境 出现(base)则说明安装成功
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">conda deactivate # 退出conda环境
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>使用Anaconda部署ChatterBot到云服务器</title><link>https://youkiakito.github.io/p/%E4%BD%BF%E7%94%A8anaconda%E9%83%A8%E7%BD%B2chatterbot%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/%E4%BD%BF%E7%94%A8anaconda%E9%83%A8%E7%BD%B2chatterbot%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid><description>&lt;h1 id="部署训练好的chatterbot机器人到云服务器">部署训练好的ChatterBot机器人到云服务器&lt;/h1>
+&lt;h2 id="1安装chatterbot">1.安装ChatterBot&lt;/h2>
+&lt;p>首先，进入Anaconda环境&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate # 进入conda环境 出现(base)则说明安装成功
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">conda deactivate # 退出conda环境
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后安装ChatterBot&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">pip3 install chatterbot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pip3 install chatterbot-corpus
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样我们部署服务的前置条件就准备好了&lt;/p>
+&lt;h2 id="2部署成服务">2.部署成服务&lt;/h2>
+&lt;p>先写个python文件，名字随意&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">from chatterbot import ChatBot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bot = ChatBot(
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#39;susu&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> database_uri=&amp;#39;sqlite:///db.sqlite3&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;Type something to begin...&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">while True:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> try:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> user_input = input()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bot_response = bot.get_response(user_input)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print(bot_response)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Press ctrl-c or ctrl-d on the keyboard to exit
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> except (KeyboardInterrupt, EOFError, SystemExit):
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> break
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后把训练完的&lt;code>db.sqlite3&lt;/code>文件上传到云服务器，之后在Anaconda环境下运行刚才写好的python文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">python3 test.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>等待完成后显示&lt;code>Type something to begin...&lt;/code>后就可以开始对话了&lt;/p>
+&lt;blockquote>
+&lt;p>注意：一问一答哦&lt;/p>
+&lt;/blockquote></description></item><item><title>ChatterBot聊天机器人</title><link>https://youkiakito.github.io/p/chatterbot%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/</link><pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/chatterbot%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid><description>&lt;h1 id="基于chatterbot的聊天机器人">基于ChatterBot的聊天机器人&lt;/h1>
+&lt;blockquote>
+&lt;p>前言：因为作者太无聊了所以想做个自动问答系统来消遣时间&lt;del>才不是没朋友&lt;/del>，也就是常说的聊天机器人&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="关键点">关键点&lt;/h2>
+&lt;ol>
+&lt;li>句意理解&lt;br>
+系统接收到一句话，需要先通过语法分析，语义分析等来理解该句子，这样才能更好的给出回答。&lt;/li>
+&lt;li>文本信息摘取&lt;br>
+系统需要有自己的语料库、知识库或者相关内容，并从中抽取出相应的回答。&lt;/li>
+&lt;li>知识推理&lt;br>
+这个是更高一层的要求，系统应该可以通过上下文，或者接收到的句子的语义，通过知识推理的手段获取到知识库中不存在的答案。&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="可用技术栈">可用技术栈&lt;/h2>
+&lt;p>基于以上几点，可用基于现有的一些算法来训练自己的模型，也可用通过开源的框架来搭建。这里我采用的是基于开源框架ChatterBot来实现的方法&lt;/p>
+&lt;h3 id="基于chatterbot实现">基于ChatterBot实现&lt;/h3>
+&lt;p>ChatterBot 是一个功能强大的，基于 Python 的聊天机器人框架&lt;br>
+其 GitHub 地址为：&lt;a class="link" href="https://github.com/gunthercox/ChatterBot/tree/master" target="_blank" rel="noopener"
+>https://github.com/gunthercox/ChatterBot/tree/master&lt;/a>&lt;br>
+官方文档为：&lt;a class="link" href="https://chatterbot.readthedocs.io" target="_blank" rel="noopener"
+>https://chatterbot.readthedocs.io&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="实战">实战&lt;/h2>
+&lt;h3 id="1获取语料">1.获取语料&lt;/h3>
+&lt;p>中文聊天语料这一块，我选择了网上大神整理的资料，这里附上github链接：&lt;br>
+&lt;a class="link" href="https://github.com/codemayq/chinese_chatbot_corpus" target="_blank" rel="noopener"
+>https://github.com/codemayq/chinese_chatbot_corpus&lt;/a>&lt;br>
+其中语料的使用大神有写了详尽的文档，务必仔细阅读后使用。&lt;/p>
+&lt;blockquote>
+&lt;p>这里笔者遇到了一个比较奇怪的问题，使用pycharm运行文档里的main.py可以顺利进行语料转换，然而直接使用命令行会报错，暂时不清楚原理&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="2使用google-colab训练">2.使用Google Colab训练&lt;/h3>
+&lt;ol>
+&lt;li>上传语料到Colab&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>这里我采用的是将下载到的语料上传到Google Drive，然后挂载Google Drive硬盘到Colab来调用&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>在Colab上安装ChatterBot&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">!pip3 install chatterbot #注意：感叹号是必须的
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">!pip3 install chatterbot-corpus #注意：感叹号是必须的
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>创建一个ChatBot&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">from chatterbot import ChatBot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">from chatterbot.trainers import ListTrainer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">chatbot = ChatBot(&amp;#34;susu&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">trainer = ListTrainer(chatbot)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>载入语料&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">with open(&amp;#39;chatterbot.tsv&amp;#39;, encoding=&amp;#39;utf-8&amp;#39;) as f:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> data = f.read().replace(&amp;#39;\t&amp;#39;, &amp;#39;\n&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(data[:100])
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>开始训练&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">trainer.train(data)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>这一步根据语料的数据量大小时间有长有短，个人测试为了不超过Colab的使用限制，尽量选择较小的语料库或者拆分为多个语料库多次训练比较好&lt;/p>
+&lt;/blockquote>
+&lt;p>等待训练完成后，记得将生成的db.sqlite3文件下载到本地&lt;/p></description></item><item><title>Linux常用命令</title><link>https://youkiakito.github.io/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link><pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid><description>&lt;h1 id="rackmultipart20210828-4-gzkkau_html_be51e28a4163ed7gif-rackmultipart20210828-4-gzkkau_html_cb4b42681eb9734bgif关机重启注销">&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_cb4b42681eb9734b.gif"
+loading="lazy"
+>关机/重启/注销&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令shutdown -h now&lt;/th>
+&lt;th>作⽤即刻关机&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>shutdown -h 10&lt;/td>
+&lt;td>10分钟后关机&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>shutdown -h 11:00&lt;/td>
+&lt;td>11：00关机&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>shutdown -h +10&lt;/td>
+&lt;td>预定时间关机（10分钟后）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>shutdown -c&lt;/td>
+&lt;td>取消指定时间关机&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>shutdown -r now&lt;/td>
+&lt;td>重启&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>shutdown -r 10&lt;/td>
+&lt;td>10分钟之后重启&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>shutdown -r 11:00&lt;/td>
+&lt;td>定时重启&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>reboot&lt;/td>
+&lt;td>重启&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>init 6&lt;/td>
+&lt;td>重启&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>init 0&lt;/td>
+&lt;td>⽴刻关机&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>telinit 0&lt;/td>
+&lt;td>关机&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>poweroff&lt;/td>
+&lt;td>⽴刻关机&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>halt&lt;/td>
+&lt;td>关机&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sync&lt;/td>
+&lt;td>buff数据同步到磁盘&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>logout&lt;/td>
+&lt;td>退出登录Shell&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="系统信息和性能查看">系统信息和性能查看&lt;/h1>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_b935dcd105828746.gif"
+loading="lazy"
+>常⽤命令作⽤&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>uname -a&lt;/th>
+&lt;th>查看内核/OS/CPU信息&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>uname -r&lt;/td>
+&lt;td>查看内核版本&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>uname -m&lt;/td>
+&lt;td>查看处理器架构&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>arch&lt;/td>
+&lt;td>查看处理器架构&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>hostname&lt;/td>
+&lt;td>查看计算机名&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>who&lt;/td>
+&lt;td>显示当前登录系统的⽤户&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>who am i&lt;/td>
+&lt;td>显示登录时的⽤户名&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>whoami&lt;/td>
+&lt;td>显示当前⽤户名&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cat /proc/version&lt;/td>
+&lt;td>查看linux版本信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cat /proc/cpuinfo&lt;/td>
+&lt;td>查看CPU信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cat /proc/interrupts&lt;/td>
+&lt;td>查看中断&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cat /proc/loadavg&lt;/td>
+&lt;td>查看系统负载&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>uptime&lt;/td>
+&lt;td>查看系统运⾏时间、⽤户数、负载&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>env&lt;/td>
+&lt;td>查看系统的环境变量&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>lsusb -tv&lt;/td>
+&lt;td>查看系统USB设备信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>lspci -tv&lt;/td>
+&lt;td>查看系统PCI设备信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>lsmod&lt;/td>
+&lt;td>查看已加载的系统模块&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>grep MemTotal /proc/meminfo&lt;/th>
+&lt;th>查看内存总量&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>grep MemFree /proc/meminfo&lt;/td>
+&lt;td>查看空闲内存量&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>free -m&lt;/td>
+&lt;td>查看内存⽤量和交换区⽤量&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>date&lt;/td>
+&lt;td>显示系统⽇期时间&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cal 2021&lt;/td>
+&lt;td>显示2021⽇历表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>top&lt;/td>
+&lt;td>动态显示cpu/内存/进程等情况&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>vmstat 1 20&lt;/td>
+&lt;td>每1秒采⼀次系统状态，采20次&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>iostat&lt;/td>
+&lt;td>查看io读写/cpu使⽤情况&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sar -u 1 10&lt;/td>
+&lt;td>查询cpu使⽤情况（1秒⼀次，共10次）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sar -d 1 10&lt;/td>
+&lt;td>查询磁盘性能&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_27f6f48dde96417f.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="磁盘和分区">磁盘和分区&lt;/h1>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_779c9ba79c83d199.gif"
+loading="lazy"
+>常⽤命令&lt;/p>
+&lt;p>fdisk -l swapon -s df -h&lt;/p>
+&lt;p>df -hl&lt;/p>
+&lt;p>du -sh /dir&lt;/p>
+&lt;p>作⽤&lt;/p>
+&lt;p>查看所有磁盘分区查看所有交换分区&lt;/p>
+&lt;p>查看磁盘使⽤情况及挂载点同上&lt;/p>
+&lt;p>查看指定某个⽬录的⼤⼩&lt;/p>
+&lt;p>从⾼到低依次显示⽂件和⽬录⼤⼩&lt;/p>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+>mount /dev/hda2 /mnt/hda2&lt;/p>
+&lt;p>mount-tntfs/dev/sdc1/mnt/usbhd1 mount -o loop xxx.iso /mnt/cdrom mount /dev/sda1 /mnt/usbdisk umount -v/dev/sda1&lt;/p>
+&lt;p>umount -v /mnt/mymnt fuser -km /mnt/hda1&lt;/p>
+&lt;p>挂载hda2盘&lt;/p>
+&lt;p>指定⽂件系统类型挂载（如ntfs）挂载iso⽂件&lt;/p>
+&lt;p>挂载usb盘/闪存设备通过设备名卸载 通过挂载点卸载 强制卸载(慎⽤)&lt;/p>
+&lt;h1 id="rackmultipart20210828-4-gzkkau_html_be51e28a4163ed7gif-rackmultipart20210828-4-gzkkau_html_543e0a3eec8984b0gif户和户组">&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_543e0a3eec8984b0.gif"
+loading="lazy"
+>⽤户和⽤户组&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令useradd codesheep&lt;/th>
+&lt;th>作⽤创建⽤户&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>userdel -r codesheep&lt;/td>
+&lt;td>删除⽤户&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>usermod -g group_name user_name&lt;/td>
+&lt;td>修改⽤户的组&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>usermod -aG group_name user_name&lt;/td>
+&lt;td>将⽤户添加到组&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>usermod -s /bin/ksh -d /home/codepig–g dev codesheep&lt;/td>
+&lt;td>修改⽤户codesheep的登录Shell、主⽬录以及⽤户组&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>groups test&lt;/td>
+&lt;td>查看test⽤户所在的组&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>groupadd group_name&lt;/td>
+&lt;td>创建⽤户组&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>groupdel group_name&lt;/td>
+&lt;td>删除⽤户组&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>groupmod -n new_name old_name&lt;/td>
+&lt;td>重命名⽤户组&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>su - user_name&lt;/td>
+&lt;td>完整切换到⼀个⽤户环境&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>passwd&lt;/td>
+&lt;td>修改⼝令&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>passwd codesheep&lt;/td>
+&lt;td>修改某⽤户的⼝令&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>w&lt;/td>
+&lt;td>查看活动⽤户&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>id codesheep&lt;/td>
+&lt;td>查看指定⽤户codesheep信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>last&lt;/td>
+&lt;td>查看⽤户登录⽇志&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>crontab -l&lt;/td>
+&lt;td>查看当前⽤户的计划任务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cut -d: -f1 /etc/passwd&lt;/td>
+&lt;td>查看系统所有⽤户&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cut -d: -f1 /etc/group&lt;/td>
+&lt;td>查看系统所有组&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_1770cfabd801f321.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="络和进程管理">⽹络和进程管理&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令ifconfig&lt;/th>
+&lt;th>作⽤查看⽹络接⼝属性&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>ifconfig eth0&lt;/td>
+&lt;td>查看某⽹卡的配置&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>route -n&lt;/td>
+&lt;td>查看路由表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>netstat -lntp&lt;/td>
+&lt;td>查看所有监听端⼝&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>netstat -antp&lt;/td>
+&lt;td>查看已经建⽴的TCP连接&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>netstat -lutp&lt;/td>
+&lt;td>查看TCP/UDP的状态信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ifup eth0&lt;/td>
+&lt;td>启⽤eth0⽹络设备&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ifdown eth0&lt;/td>
+&lt;td>禁⽤eth0⽹络设备&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>iptables -L&lt;/td>
+&lt;td>查看iptables规则&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ifconfig eth0 192.168.1.1netmask255.255.255.0&lt;/td>
+&lt;td>配置ip地址&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dhclient eth0&lt;/td>
+&lt;td>以dhcp模式启⽤eth0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>route add -net 0/0 gw Gateway_IP&lt;/td>
+&lt;td>配置默认⽹关&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>routeadd-net192.168.0.0netmask 255.255.0.0 gw192.168.1.1&lt;/td>
+&lt;td>配置静态路由到达⽹络'192.168.0.0/16'&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>route del 0/0 gw Gateway_IP&lt;/td>
+&lt;td>删除静态路由&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>hostname&lt;/td>
+&lt;td>查看主机名&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>host&lt;a class="link" href="http://www.codesheep.cn/" target="_blank" rel="noopener"
+>www.codesheep.cn&lt;/a>nslookup&lt;a class="link" href="http://www.codesheep.cn/" target="_blank" rel="noopener"
+>www.codesheep.cn&lt;/a>&lt;/p>
+&lt;p>ps -ef&lt;/p>
+&lt;p>解析主机名&lt;/p>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_17c082bb9fd3fd45.gif"
+loading="lazy"
+>查询DNS记录，查看域名解析是否正常&lt;/p>
+&lt;p>查看所有进程&lt;/p>
+&lt;p>过滤出你需要的进程&lt;/p>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+>kill -s name kill -s pid top&lt;/p>
+&lt;p>vmstat 1 20&lt;/p>
+&lt;p>iostat&lt;/p>
+&lt;p>sar -u 110&lt;/p>
+&lt;p>sar -d 110&lt;/p>
+&lt;p>kill指定名称的进程&lt;/p>
+&lt;p>kill指定pid的进程实时显示进程状态&lt;/p>
+&lt;p>每1秒采⼀次系统状态，采&lt;/p>
+&lt;p>20次&lt;/p>
+&lt;p>查看io读写/cpu使⽤情况&lt;/p>
+&lt;p>查询cpu使⽤情况（1秒⼀次，共10次）&lt;/p>
+&lt;p>查询磁盘性能&lt;/p>
+&lt;h1 id="rackmultipart20210828-4-gzkkau_html_be51e28a4163ed7gif-rackmultipart20210828-4-gzkkau_html_ead119eecb46767gif常系统服务命令">&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_ead119eecb46767.gif"
+loading="lazy"
+>常⻅系统服务命令&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令chkconfig &amp;ndash;list&lt;/th>
+&lt;th>作⽤列出系统服务&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>service &amp;amp;lt;服务名&amp;amp;gt; status&lt;/td>
+&lt;td>查看某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>service &amp;amp;lt;服务名&amp;amp;gt; start&lt;/td>
+&lt;td>启动某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>service &amp;amp;lt;服务名&amp;amp;gt; stop&lt;/td>
+&lt;td>终⽌某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>service &amp;amp;lt;服务名&amp;amp;gt; restart&lt;/td>
+&lt;td>重启某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>systemctl status &amp;amp;lt;服务名&amp;amp;gt;&lt;/td>
+&lt;td>查看某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>systemctl start &amp;amp;lt;服务名&amp;amp;gt;&lt;/td>
+&lt;td>启动某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>systemctl stop &amp;amp;lt;服务名&amp;amp;gt;&lt;/td>
+&lt;td>终⽌某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>systemctl restart &amp;amp;lt;服务名&amp;amp;gt;&lt;/td>
+&lt;td>重启某个服务&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>systemctl enable &amp;amp;lt;服务名&amp;amp;gt;&lt;/td>
+&lt;td>开启⾃启动&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>systemctl disable &amp;amp;lt;服务名&amp;amp;gt;&lt;/td>
+&lt;td>关闭⾃启动&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_a43a38670320cd76.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="件和录操作">⽂件和⽬录操作&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令cd &amp;amp;lt;⽬录名&amp;amp;gt;&lt;/th>
+&lt;th>作⽤进⼊某个⽬录&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>cd ..&lt;/td>
+&lt;td>回上级⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cd ../..&lt;/td>
+&lt;td>回上两级⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cd&lt;/td>
+&lt;td>进个⼈主⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cd -&lt;/td>
+&lt;td>回上⼀步所在⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>pwd&lt;/td>
+&lt;td>显示当前路径&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ls&lt;/td>
+&lt;td>查看⽂件⽬录列表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ls -F&lt;/td>
+&lt;td>查看⽬录中内容（显示是⽂件还是⽬录）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ls -l&lt;/td>
+&lt;td>查看⽂件和⽬录的详情列表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ls -a&lt;/td>
+&lt;td>查看隐藏⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ls -lh&lt;/td>
+&lt;td>查看⽂件和⽬录的详情列表（增强⽂件⼤⼩易读性）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ls -lSr&lt;/td>
+&lt;td>查看⽂件和⽬录列表（以⽂件⼤⼩升序查看）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tree&lt;/td>
+&lt;td>查看⽂件和⽬录的树形结构&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>mkdir &amp;amp;lt;⽬录名&amp;amp;gt;&lt;/td>
+&lt;td>创建⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>mkdir dir1 dir2&lt;/td>
+&lt;td>同时创建两个⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>mkdir -p/tmp/dir1/dir2&lt;/td>
+&lt;td>创建⽬录树&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rm -f file1&lt;/td>
+&lt;td>删除'file1'⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rmdir dir1&lt;/td>
+&lt;td>删除'dir1'⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>rm -rf dir1&lt;/th>
+&lt;th>删除'dir1'⽬录和其内容&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>rm -rf dir1 dir2&lt;/td>
+&lt;td>同时删除两个⽬录及其内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>mv old_dir new_dir&lt;/td>
+&lt;td>重命名/移动⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cp file1 file2&lt;/td>
+&lt;td>复制⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cp dir/* .&lt;/td>
+&lt;td>复制某⽬录下的所有⽂件⾄当前⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cp -a dir1 dir2&lt;/td>
+&lt;td>复制⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cp -a /tmp/dir1 .&lt;/td>
+&lt;td>复制⼀个⽬录⾄当前⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ln -s file1 link1&lt;/td>
+&lt;td>创建指向⽂件/⽬录的软链接&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>ln file1 lnk1&lt;/td>
+&lt;td>创建指向⽂件/⽬录的物理链接&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>find / -name file1&lt;/td>
+&lt;td>从跟⽬录开始搜索⽂件/⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>find / -user user1&lt;/td>
+&lt;td>搜索⽤户user1的⽂件/⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>find /dir -name *.bin&lt;/td>
+&lt;td>在⽬录/dir中搜带有.bin后缀的⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>locate &amp;amp;lt;关键词&amp;amp;gt;&lt;/td>
+&lt;td>快速定位⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>locate *.mp4&lt;/td>
+&lt;td>寻找.mp4结尾的⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>whereis &amp;amp;lt;关键词&amp;amp;gt;&lt;/td>
+&lt;td>显示某⼆进制⽂件/可执⾏⽂件的路径&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>which &amp;amp;lt;关键词&amp;amp;gt;&lt;/td>
+&lt;td>查找系统⽬录下某的⼆进制⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>chmod ugo+rwx dir1&lt;/td>
+&lt;td>设置⽬录所有者(u)、群组(g)及其他⼈(o)的读（r）写(w)执⾏(x)权限&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>chmod go-rwx dir1&lt;/td>
+&lt;td>移除群组(g)与其他⼈(o)对⽬录的读写执⾏权限&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>chown user1 file1&lt;/td>
+&lt;td>改变⽂件的所有者属性&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>chown -R user1 dir1&lt;/td>
+&lt;td>改变⽬录的所有者属性&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>chgrp group1 file1&lt;/td>
+&lt;td>改变⽂件群组&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_b0087f4e7846d971.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_cb729a991920fae5.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_cb729a991920fae5.gif"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_4ac77a18b906bb97.gif"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_734e0bf5bf5307d2.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="件查看和处理">⽂件查看和处理&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令cat file1&lt;/th>
+&lt;th>作⽤查看⽂件内容&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>cat -n file1&lt;/td>
+&lt;td>查看内容并标示⾏数&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>cat xxx.txt&lt;/td>
+&lt;td>awk 'NR%2==1'&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tac file1&lt;/td>
+&lt;td>从最后⼀⾏开始反看⽂件内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>more file1&lt;/td>
+&lt;td>查看⼀个⻓⽂件的内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>less file1&lt;/td>
+&lt;td>类似more命令，但允许反向操作&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>head -2 file1&lt;/td>
+&lt;td>查看⽂件前两⾏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tail -2 file1&lt;/td>
+&lt;td>查看⽂件后两⾏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tail -f /log/msg&lt;/td>
+&lt;td>实时查看添加到⽂件中的内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>grep codesheep hello.txt&lt;/td>
+&lt;td>在⽂件hello.txt中查找关键词codesheep&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>grep ^sheep hello.txt&lt;/td>
+&lt;td>在⽂件hello.txt中查找以sheep开头的内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>grep [0-9] hello.txt&lt;/th>
+&lt;th>选择hello.txt⽂件中所有包含数字的⾏&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>sed 's/s1/s2/g' hello.txt&lt;/td>
+&lt;td>将hello.txt⽂件中的s1替换成s2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed '/^$/d' hello.txt&lt;/td>
+&lt;td>从hello.txt⽂件中删除所有空⽩⾏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed '/ *#/d; /^$/d' hello.txt&lt;/td>
+&lt;td>从hello.txt⽂件中删除所有注释和空⽩⾏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed -e '1d' hello.txt&lt;/td>
+&lt;td>从⽂件hello.txt中排除第⼀⾏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed -n '/s1/p' hello.txt&lt;/td>
+&lt;td>查看只包含关键词&amp;quot;s1&amp;quot;的⾏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed -e 's/ *$//' hello.txt&lt;/td>
+&lt;td>删除每⼀⾏最后的空⽩字符&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed -e 's/s1//g' hello.txt&lt;/td>
+&lt;td>从⽂档中只删除词汇s1并保留剩余全部&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed -n '1,5p;5q' hello.txt&lt;/td>
+&lt;td>查看从第⼀⾏到第5⾏内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sed -n '5p;5q' hello.txt&lt;/td>
+&lt;td>查看第5⾏&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>paste file1 file2&lt;/td>
+&lt;td>合并两个⽂件或两栏的内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>paste -d '+' file1 file2&lt;/td>
+&lt;td>合并两个⽂件或两栏的内容，中间⽤&amp;quot;+&amp;quot;区分&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sort file1 file2&lt;/td>
+&lt;td>排序两个⽂件的内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sort file1 file2&lt;/td>
+&lt;td>uniq&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sort file1 file2&lt;/td>
+&lt;td>uniq -u&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sort file1 file2&lt;/td>
+&lt;td>uniq -d&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>comm -1 file1 file2&lt;/td>
+&lt;td>⽐较两个⽂件的内容(去除'file1'所含内容)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>comm -2 file1 file2&lt;/td>
+&lt;td>⽐较两个⽂件的内容(去除'file2'所含内容)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>comm -3 file1 file2&lt;/td>
+&lt;td>⽐较两个⽂件的内容(去除两⽂件共有部分)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_1d407b67f4f9ab7d.gif"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_abc50d1c45f1faf5.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="打包和解压">打包和解压&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令zip xxx.zip file&lt;/th>
+&lt;th>作⽤压缩⾄zip包&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>zip -r xxx.zip file1 file2 dir1&lt;/td>
+&lt;td>将多个⽂件+⽬录压成zip包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>unzip xxx.zip&lt;/td>
+&lt;td>解压zip包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -cvf xxx.tar file&lt;/td>
+&lt;td>创建⾮压缩tar包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -cvf xxx.tar file1 file2 dir1&lt;/td>
+&lt;td>将多个⽂件+⽬录打tar包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -tf xxx.tar&lt;/td>
+&lt;td>查看tar包的内容&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -xvf xxx.tar&lt;/td>
+&lt;td>解压tar包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -xvf xxx.tar -C /dir&lt;/td>
+&lt;td>将tar包解压⾄指定⽬录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -cvfj xxx.tar.bz2 dir&lt;/td>
+&lt;td>创建bz2压缩包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -jxvf xxx.tar.bz2&lt;/td>
+&lt;td>解压bz2压缩包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -cvfz xxx.tar.gz dir&lt;/td>
+&lt;td>创建gzip压缩包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tar -zxvf xxx.tar.gz&lt;/td>
+&lt;td>解压gzip压缩包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>bunzip2 xxx.bz2&lt;/td>
+&lt;td>解压bz2压缩包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>bzip2 filename&lt;/td>
+&lt;td>压缩⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gunzip xxx.gz&lt;/td>
+&lt;td>解压gzip压缩包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gzip filename&lt;/td>
+&lt;td>压缩⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gzip -9 filename&lt;/td>
+&lt;td>最⼤程度压缩&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_5ea5e92dfaad7b10.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="rpm">RPM&lt;/h1>
+&lt;h1 id="包管理命令">包管理命令&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令rpm -qa&lt;/th>
+&lt;th>作⽤查看已安装的rpm包&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>rpm -q pkg_name&lt;/td>
+&lt;td>查询某个rpm包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -q &amp;ndash;whatprovides xxx&lt;/td>
+&lt;td>显示xxx功能是由哪个包提供的&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -q &amp;ndash;whatrequires xxx&lt;/td>
+&lt;td>显示xxx功能被哪个程序包依赖的&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -q &amp;ndash;changelog xxx&lt;/td>
+&lt;td>显示xxx包的更改记录&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -qi pkg_name&lt;/td>
+&lt;td>查看⼀个包的详细信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -qd pkg_name&lt;/td>
+&lt;td>查询⼀个包所提供的⽂档&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -qc pkg_name&lt;/td>
+&lt;td>查看已安装rpm包提供的配置⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -ql pkg_name&lt;/td>
+&lt;td>查看⼀个包安装了哪些⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -qf filename&lt;/td>
+&lt;td>查看某个⽂件属于哪个包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -qR pkg_name&lt;/td>
+&lt;td>查询包的依赖关系&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -ivh xxx.rpm&lt;/td>
+&lt;td>安装rpm包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -ivh &amp;ndash;test xxx.rpm&lt;/td>
+&lt;td>测试安装rpm包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -ivh &amp;ndash;nodeps xxx.rpm&lt;/td>
+&lt;td>安装rpm包时忽略依赖关系&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -e xxx&lt;/td>
+&lt;td>卸载程序包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -Fvh pkg_name&lt;/td>
+&lt;td>升级确定已安装的rpm包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -Uvh pkg_name&lt;/td>
+&lt;td>升级rpm包(若未安装则会安装)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rpm -V pkg_name&lt;/td>
+&lt;td>RPM包详细信息校验&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_3ac61a23976a5049.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="yum">YUM&lt;/h1>
+&lt;h1 id="包管理命令-1">包管理命令&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令yum repolist enabled&lt;/th>
+&lt;th>作⽤显示可⽤的源仓库&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>yum search pkg_name&lt;/td>
+&lt;td>搜索软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum install pkg_name&lt;/td>
+&lt;td>下载并安装软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum install &amp;ndash;downloadonly pkg_name&lt;/td>
+&lt;td>只下载不安装&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum list&lt;/td>
+&lt;td>显示所有程序包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum list installed&lt;/td>
+&lt;td>查看当前系统已安装包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum list updates&lt;/td>
+&lt;td>查看可以更新的包列表&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum check-update&lt;/td>
+&lt;td>查看可升级的软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum update&lt;/td>
+&lt;td>更新所有软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum update pkg_name&lt;/td>
+&lt;td>升级指定软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum deplist pkg_name&lt;/td>
+&lt;td>列出软件包依赖关系&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum remove pkg_name&lt;/td>
+&lt;td>删除软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum clean all&lt;/td>
+&lt;td>清除缓存&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum clean packages&lt;/td>
+&lt;td>清除缓存的软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>yum clean headers&lt;/td>
+&lt;td>清除缓存的header&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_ec6db9d8d28564a1.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="dpkg">DPKG&lt;/h1>
+&lt;h1 id="包管理命令-2">包管理命令&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令dpkg -c xxx.deb&lt;/th>
+&lt;th>作⽤列出deb包的内容&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>dpkg -i xxx.deb&lt;/td>
+&lt;td>安装/更新deb包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dpkg -r pkg_name&lt;/td>
+&lt;td>移除deb包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dpkg -P pkg_name&lt;/td>
+&lt;td>移除deb包(不保留配置)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dpkg -l&lt;/td>
+&lt;td>查看系统中已安装deb包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dpkg -l pkg_name&lt;/td>
+&lt;td>显示包的⼤致信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dpkg -L pkg_name&lt;/td>
+&lt;td>查看deb包安装的⽂件&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dpkg -s pkg_name&lt;/td>
+&lt;td>查看包的详细信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dpkg –unpack xxx.deb&lt;/td>
+&lt;td>解开deb包的内容&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_be51e28a4163ed7.gif"
+loading="lazy"
+> &lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_e08e14e43bff429c.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="apt">APT&lt;/h1>
+&lt;h1 id="软件具">软件⼯具&lt;/h1>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>常⽤命令apt-cache search pkg_name&lt;/th>
+&lt;th>作⽤搜索程序包&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>apt-cache show pkg_name&lt;/td>
+&lt;td>获取包的概览信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>apt-get install pkg_name&lt;/td>
+&lt;td>安装/升级软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>apt-get purge pkg_name&lt;/td>
+&lt;td>卸载软件（包括配置）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>apt-get remove pkg_name&lt;/td>
+&lt;td>卸载软件（不包括配置）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>apt-get update&lt;/td>
+&lt;td>更新包索引信息&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>apt-get upgrade&lt;/td>
+&lt;td>更新已安装软件包&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>apt-get clean&lt;/td>
+&lt;td>清理缓存&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="https://youkiakito.github.io/RackMultipart20210828-4-gzkkau_html_1d797d869a5ec63d.gif"
+loading="lazy"
+>&lt;/p></description></item><item><title>markdown学习</title><link>https://youkiakito.github.io/p/markdown%E5%AD%A6%E4%B9%A0/</link><pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/markdown%E5%AD%A6%E4%B9%A0/</guid><description>&lt;blockquote>
+&lt;p>前言：因为作者记忆力实在是差的离谱，故作此笔记以记录markdown的常用语法格式，以便需要时查找使用。如果这也能帮助到你，那真的再好不过了。具体内容包括代码、列表、链接、图片、区块等的markdown语法使用，部分内容需要查看markdown源码才能看出差别&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h1 id="markdown学习笔记">markdown学习笔记&lt;/h1>
+&lt;hr>
+&lt;h1 id="代码">代码&lt;/h1>
+&lt;p>mac上指定代码使用字符&lt;code>·&lt;/code>的英文字符即可(键盘上数字1的左边)，如：&lt;code>print()&lt;/code>.&lt;br>
+而代码区块使用四个空格或者制表符即可，如：&lt;br>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+也可以用三个字符&lt;code>·&lt;/code>的英文字符包裹一段代码，并指定一种语言（可不指定），如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&amp;lt;html&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h1 id="列表">列表&lt;/h1>
+&lt;p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记，这些标记后面要添加一个空格，然后再填写内容：&lt;/p>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;p>有序列表使用数字并加上&lt;code>.&lt;/code>号来表示，如：&lt;/p>
+&lt;ol>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ol>
+&lt;h2 id="列表嵌套">列表嵌套&lt;/h2>
+&lt;p>列表嵌套只需在子列表中的选项前面添加四个空格即可：&lt;/p>
+&lt;ol>
+&lt;li>第一项
+&lt;ul>
+&lt;li>第一项嵌套的第一个元素&lt;/li>
+&lt;li>第一项嵌套的第二个元素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>第二项
+&lt;ul>
+&lt;li>第二项嵌套的第一个元素&lt;/li>
+&lt;li>第二项嵌套的第二个元素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h1 id="区块">区块&lt;/h1>
+&lt;p>Markdown 区块引用是在段落开头使用 &amp;gt; 符号 ，然后后面紧跟一个空格符号：&lt;/p>
+&lt;blockquote>
+&lt;p>区块引用&lt;/p>
+&lt;blockquote>
+&lt;p>一层嵌套&lt;/p>
+&lt;blockquote>
+&lt;p>二层嵌套&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>如果要在列表项目内放进区块，那么就需要在 &amp;gt; 前添加四个空格的缩进：&lt;/p>
+&lt;ul>
+&lt;li>第一项
+&lt;blockquote>
+&lt;p>第一项区块第一排&lt;br>
+第一项区块第二排&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>第二项
+&lt;blockquote>
+&lt;p>第二项区块第一排&lt;br>
+第二项区块第二排&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="链接">链接&lt;/h1>
+&lt;p>链接实用方法如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[链接名称](链接地址)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">或者
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;链接地址&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>举个栗子：&lt;/p>
+&lt;blockquote>
+&lt;p>这是一个链接 &lt;a class="link" href="https://www.github.com" target="_blank" rel="noopener"
+>GAYHUB&lt;/a>&lt;br>
+或者直接使用：&lt;br>
+&lt;a class="link" href="https://www.github.com" target="_blank" rel="noopener"
+>https://www.github.com&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h1 id="图片">图片&lt;/h1>
+&lt;p>图片语法格式如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">![alt属性文本](图片地址)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![alt属性文本](图片地址 &amp;#34;可选标题&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>例如：&lt;br>
+无标题&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.0/img/favicon.png"
+loading="lazy"
+alt="示例图片"
+>&lt;/p>
+&lt;hr>
+&lt;p>有标题&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.0/img/favicon.png"
+loading="lazy"
+alt="示例图片"
+>&lt;/p>
+&lt;hr>
+&lt;h1 id="表格">表格&lt;/h1>
+&lt;p>制作表格使用&lt;code>｜&lt;/code>来分隔不同单元格，用&lt;code>-&lt;/code>分隔表格和其它行，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">| 表头 | 表头 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| ---- | ---- |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>显示为&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>表头&lt;/th>
+&lt;th>表头&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>单元格&lt;/td>
+&lt;td>单元格&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>单元格&lt;/td>
+&lt;td>单元格&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="对齐方式">对齐方式&lt;/h2>
+&lt;blockquote>
+&lt;p>可以用以下方法设置对齐方式：&lt;br>
+&lt;code>-:&lt;/code>：设置内容和标题居右对齐&lt;br>
+&lt;code>:-&lt;/code>：设置内容和标题居左对齐&lt;br>
+&lt;code>:-:&lt;/code>：设置内容和标题居中对齐&lt;/p>
+&lt;/blockquote>
+&lt;p>实例如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">| 左对齐 | 右对齐 | 居中对齐 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| :---- | ----: | :----: |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">左对齐&lt;/th>
+&lt;th style="text-align:right">右对齐&lt;/th>
+&lt;th style="text-align:center">居中对齐&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">单元格&lt;/td>
+&lt;td style="text-align:right">单元格&lt;/td>
+&lt;td style="text-align:center">单元格&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">单元格&lt;/td>
+&lt;td style="text-align:right">单元格&lt;/td>
+&lt;td style="text-align:center">单元格&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Hello World</title><link>https://youkiakito.github.io/p/hello-world/</link><pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/hello-world/</guid><description>&lt;img src="https://youkiakito.github.io/p/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
+&lt;p>For more information about this theme, check the documentation: &lt;a class="link" href="https://docs.stack.jimmycai.com/" target="_blank" rel="noopener"
+>https://docs.stack.jimmycai.com/&lt;/a>&lt;/p>
+&lt;p>Want a site like this? Check out &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
+>hugo-theme-stack-stater&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

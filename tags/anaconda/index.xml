@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Anaconda on 璃沫莫的小木屋</title><link>https://youkiakito.github.io/tags/anaconda/</link><description>Recent content in Anaconda on 璃沫莫的小木屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youkiakito.github.io/tags/anaconda/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Anaconda部署ChatterBot到云服务器</title><link>https://youkiakito.github.io/p/%E4%BD%BF%E7%94%A8anaconda%E9%83%A8%E7%BD%B2chatterbot%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/%E4%BD%BF%E7%94%A8anaconda%E9%83%A8%E7%BD%B2chatterbot%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid><description>&lt;h1 id="部署训练好的chatterbot机器人到云服务器">部署训练好的ChatterBot机器人到云服务器&lt;/h1>
+&lt;h2 id="1安装chatterbot">1.安装ChatterBot&lt;/h2>
+&lt;p>首先，进入Anaconda环境&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate # 进入conda环境 出现(base)则说明安装成功
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">conda deactivate # 退出conda环境
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后安装ChatterBot&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">pip3 install chatterbot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pip3 install chatterbot-corpus
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样我们部署服务的前置条件就准备好了&lt;/p>
+&lt;h2 id="2部署成服务">2.部署成服务&lt;/h2>
+&lt;p>先写个python文件，名字随意&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">from chatterbot import ChatBot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bot = ChatBot(
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#39;susu&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> database_uri=&amp;#39;sqlite:///db.sqlite3&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;Type something to begin...&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">while True:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> try:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> user_input = input()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bot_response = bot.get_response(user_input)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print(bot_response)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Press ctrl-c or ctrl-d on the keyboard to exit
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> except (KeyboardInterrupt, EOFError, SystemExit):
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> break
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后把训练完的&lt;code>db.sqlite3&lt;/code>文件上传到云服务器，之后在Anaconda环境下运行刚才写好的python文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">python3 test.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>等待完成后显示&lt;code>Type something to begin...&lt;/code>后就可以开始对话了&lt;/p>
+&lt;blockquote>
+&lt;p>注意：一问一答哦&lt;/p>
+&lt;/blockquote></description></item><item><title>安装Anaconda</title><link>https://youkiakito.github.io/p/%E5%AE%89%E8%A3%85anaconda/</link><pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/%E5%AE%89%E8%A3%85anaconda/</guid><description>&lt;blockquote>
+&lt;p>关于Anaconda：Anaconda指的是一个开源的Python发行版本，其包含了conda、Python等180多个科学包及其依赖项。因为包含了大量的科学包，Anaconda 的下载文件比较大（约 531 MB），如果只需要某些包，或者需要节省带宽或存储空间，也可以使用Miniconda这个较小的发行版（仅包含conda和 Python）。&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="安装anaconda">安装Anaconda&lt;/h1>
+&lt;h2 id="1下载anaconda">1.下载Anaconda&lt;/h2>
+&lt;p>这里使用清华大学的源会快一些&lt;br>
+&lt;a class="link" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&amp;amp;O=D" target="_blank" rel="noopener"
+>https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&amp;O=D&lt;/a>&lt;br>
+进去之后根据需要的架构选择安装包，然后复制下载链接，在云服务器中进行下载&lt;br>
+&lt;code>yum install -y wget &amp;amp;&amp;amp; wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2021.05-Linux-x86_64.sh&lt;/code>&lt;/p>
+&lt;h2 id="2安装anaconda">2.安装Anaconda&lt;/h2>
+&lt;p>在下载目录中执行下载的文件，这里记得使用命令&lt;code>ls&lt;/code>查看所下载文件的名字，然后执行&lt;br>
+&lt;code>bash Anaconda3-2021.05-Linux-x86_64.sh&lt;/code>&lt;br>
+之后会有很长的License许可声明，一直回车直到出现以下文字&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Do you accept the license terms? [yes|no]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[no] &amp;gt;&amp;gt;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Please answer &amp;#39;yes&amp;#39; or &amp;#39;no&amp;#39;:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; yes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>之后要选择安装目录，如果无需更改直接回车Enter，如需更改要输入绝对路径（可以先查看下硬盘的挂载情况再自行选择安装目录，查看挂载情况的语句是df -h）:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Anaconda3 will now be installed into this location:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/root/anaconda3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Press ENTER to confirm the location
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Press CTRL-C to abort the installation
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Or specify a different location below
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[/root/anaconda3] &amp;gt;&amp;gt;&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>之后问是否需要进行conda的初始化，我选择yes，是在/root/.bashrc目录中自动添加环境变量，会使得开机自动启动base环境。（这里应该是新版安装包的改动之处，老版本的安装包都是问是否需要添加conda至环境变量，且默认直接回车Enter是不添加，若未添加后续需要手动添加。）不过我选了yes之后使用&lt;code>conda activate&lt;/code>显示如下&lt;br>
+&lt;code>-bash: conda: command not foun&lt;/code>&lt;br>
+这个应该是环境变量的锅，所以还要配置下，之后会说&lt;/p>
+&lt;/blockquote>
+&lt;p>看到如下提示则安装成功：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Thank you for installing Anaconda3!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">===========================================================================
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Anaconda and JetBrains are working together to bring you Anaconda-powered
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">environments tightly integrated in the PyCharm IDE.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PyCharm for Anaconda is available at:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">https://www.anaconda.com/pycharm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后手动配置下环境变量&lt;br>
+&lt;code>vi /etc/profile&lt;/code>&lt;br>
+在文件最后加入如下语句（路径需要根据自己的安装位置更改）：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">PATH=$PATH:/root/anaconda3/bin
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">export PATH
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>按住shift键+:键，输入wq，保存文件并退出。最后使用如下命令刷新环境变量即可(不刷新可能无法生效)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">source /etc/profile
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo $PATH
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>最后就可以使用Anaconda的环境了&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate # 进入conda环境 出现(base)则说明安装成功
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">conda deactivate # 退出conda环境
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

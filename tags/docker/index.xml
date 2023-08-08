@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on 璃沫莫的小木屋</title><link>https://youkiakito.github.io/tags/docker/</link><description>Recent content in Docker on 璃沫莫的小木屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youkiakito.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>MAC下为Docker配置镜像加速</title><link>https://youkiakito.github.io/p/mac%E4%B8%8B%E4%B8%BAdocker%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</link><pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/mac%E4%B8%8B%E4%B8%BAdocker%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</guid><description>&lt;blockquote>
+&lt;p>由于众所周知的原因，国内拉去Docker镜像十分缓慢，我们可以通过配置国内的镜像加速来解决&lt;/p>
+&lt;/blockquote>
+&lt;p>这里我是使用的是科大的镜像地址:&lt;code>https://docker.mirrors.ustc.edu.cn/&lt;/code>&lt;/p>
+&lt;p>除了科大意外，这里还推荐以下几个镜像地址：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">网易：https://hub-mirror.c.163.com/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">阿里云：https://&amp;lt;你的ID&amp;gt;.mirror.aliyuncs.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>其中，阿里云镜像地址需要到这里去获取：&lt;a class="link" href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors" target="_blank" rel="noopener"
+>阿里云镜像获取地址&lt;/a>，登陆阿里云账号后，在左侧菜单选中镜像加速器就可以看到你的专属地址了&lt;/p>
+&lt;blockquote>
+&lt;p>当配置某一个加速器地址之后，若发现拉取不到镜像，请切换到另一个加速器地址。国内各大云服务商均提供了 Docker 镜像加速服务，建议根据运行 Docker 的云平台选择对应的镜像加速服务。&lt;/p>
+&lt;/blockquote>
+&lt;p>我们可以多添加几个国内的镜像，如果有不能使用的，会切换到可以使用个的镜像来拉取。&lt;/p>
+&lt;h1 id="macos配置镜像加速">macOS配置镜像加速&lt;/h1>
+&lt;p>对于mac用户，版本4.0.0(67817)，需要打开Docker Hub界面，然后在设置界面选中&lt;code>Docker Engine&lt;/code>&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.1/img/docker-setting.png"
+loading="lazy"
+>&lt;br>
+之后，在&lt;code>&amp;quot;debug&amp;quot;&lt;/code>语句后，添加&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;registry-mirrors&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://docker.mirrors.ustc.edu.cn/&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://hub-mirror.c.163.com/&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后点击右下角Apply &amp;amp; Restart，镜像加速就配置完毕了。&lt;/p>
+&lt;blockquote>
+&lt;p>注意：在以下语句中&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;registry-mirrors&amp;#34;: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://docker.mirrors.ustc.edu.cn/&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://hub-mirror.c.163.com/&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>[]&lt;/code>内需要配置几个镜像加速地址，就按照以上格式写几个&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="检查镜像加速是否生效">检查镜像加速是否生效&lt;/h1>
+&lt;p>如果拉取镜像仍然十分缓慢，请手动检查加速器配置是否生效，在命令行执行 docker info，如果从结果中看到了如下内容，说明配置成功&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; docker info
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Registry Mirrors:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> https://reg-mirror.qiniu.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>MAC下安装Docker</title><link>https://youkiakito.github.io/p/mac%E4%B8%8B%E5%AE%89%E8%A3%85docker/</link><pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/mac%E4%B8%8B%E5%AE%89%E8%A3%85docker/</guid><description>&lt;h1 id="安装">安装&lt;/h1>
+&lt;h2 id="使用homebrew安装">使用Homebrew安装&lt;/h2>
+&lt;p>macOS 我们可以使用 Homebrew 来安装 Docker。&lt;br>
+Homebrew 的 Cask 已经支持 Docker for Mac，因此可以很方便的使用 Homebrew Cask 来进行安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">brew install --cask --appdir=/Applications docker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>安装完成后，载入Docker app后，点击next，出现询问MAC登陆密码的对话框，输入即可。之后会弹出一个 Docker 运行的提示窗口，状态栏上也有有个小鲸鱼的图标（&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.1/img/docker-logo.png"
+loading="lazy"
+>）。&lt;/p>
+&lt;hr>
+&lt;h2 id="手动下载安装">手动下载安装&lt;/h2>
+&lt;p>如果需要手动下载，请点击以下链接下载 &lt;a class="link" href="https://docs.docker.com/docker-for-mac/install/" target="_blank" rel="noopener"
+>Install Docker Desktop on Mac&lt;/a>&lt;br>
+下载完成后，双击下载的&lt;code>.dmg&lt;/code>文件，然后将鲸鱼图标拖拽到&lt;code>Application&lt;/code>文件夹即可&lt;/p>
+&lt;p>之后点击顶部状态栏中的鲸鱼图标后会弹出操作菜单&lt;/p>
+&lt;p>启动终端后，可以通过以下命令查看安装的Docker版本&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker --version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

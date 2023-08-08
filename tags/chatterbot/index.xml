@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChatterBot on 璃沫莫的小木屋</title><link>https://youkiakito.github.io/tags/chatterbot/</link><description>Recent content in ChatterBot on 璃沫莫的小木屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youkiakito.github.io/tags/chatterbot/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Anaconda部署ChatterBot到云服务器</title><link>https://youkiakito.github.io/p/%E4%BD%BF%E7%94%A8anaconda%E9%83%A8%E7%BD%B2chatterbot%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link><pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/%E4%BD%BF%E7%94%A8anaconda%E9%83%A8%E7%BD%B2chatterbot%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid><description>&lt;h1 id="部署训练好的chatterbot机器人到云服务器">部署训练好的ChatterBot机器人到云服务器&lt;/h1>
+&lt;h2 id="1安装chatterbot">1.安装ChatterBot&lt;/h2>
+&lt;p>首先，进入Anaconda环境&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate # 进入conda环境 出现(base)则说明安装成功
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">conda deactivate # 退出conda环境
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后安装ChatterBot&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">pip3 install chatterbot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pip3 install chatterbot-corpus
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样我们部署服务的前置条件就准备好了&lt;/p>
+&lt;h2 id="2部署成服务">2.部署成服务&lt;/h2>
+&lt;p>先写个python文件，名字随意&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">from chatterbot import ChatBot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">bot = ChatBot(
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#39;susu&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> database_uri=&amp;#39;sqlite:///db.sqlite3&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;Type something to begin...&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">while True:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> try:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> user_input = input()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bot_response = bot.get_response(user_input)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print(bot_response)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> # Press ctrl-c or ctrl-d on the keyboard to exit
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> except (KeyboardInterrupt, EOFError, SystemExit):
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> break
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后把训练完的&lt;code>db.sqlite3&lt;/code>文件上传到云服务器，之后在Anaconda环境下运行刚才写好的python文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">python3 test.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>等待完成后显示&lt;code>Type something to begin...&lt;/code>后就可以开始对话了&lt;/p>
+&lt;blockquote>
+&lt;p>注意：一问一答哦&lt;/p>
+&lt;/blockquote></description></item><item><title>ChatterBot聊天机器人</title><link>https://youkiakito.github.io/p/chatterbot%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/</link><pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/chatterbot%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid><description>&lt;h1 id="基于chatterbot的聊天机器人">基于ChatterBot的聊天机器人&lt;/h1>
+&lt;blockquote>
+&lt;p>前言：因为作者太无聊了所以想做个自动问答系统来消遣时间&lt;del>才不是没朋友&lt;/del>，也就是常说的聊天机器人&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="关键点">关键点&lt;/h2>
+&lt;ol>
+&lt;li>句意理解&lt;br>
+系统接收到一句话，需要先通过语法分析，语义分析等来理解该句子，这样才能更好的给出回答。&lt;/li>
+&lt;li>文本信息摘取&lt;br>
+系统需要有自己的语料库、知识库或者相关内容，并从中抽取出相应的回答。&lt;/li>
+&lt;li>知识推理&lt;br>
+这个是更高一层的要求，系统应该可以通过上下文，或者接收到的句子的语义，通过知识推理的手段获取到知识库中不存在的答案。&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="可用技术栈">可用技术栈&lt;/h2>
+&lt;p>基于以上几点，可用基于现有的一些算法来训练自己的模型，也可用通过开源的框架来搭建。这里我采用的是基于开源框架ChatterBot来实现的方法&lt;/p>
+&lt;h3 id="基于chatterbot实现">基于ChatterBot实现&lt;/h3>
+&lt;p>ChatterBot 是一个功能强大的，基于 Python 的聊天机器人框架&lt;br>
+其 GitHub 地址为：&lt;a class="link" href="https://github.com/gunthercox/ChatterBot/tree/master" target="_blank" rel="noopener"
+>https://github.com/gunthercox/ChatterBot/tree/master&lt;/a>&lt;br>
+官方文档为：&lt;a class="link" href="https://chatterbot.readthedocs.io" target="_blank" rel="noopener"
+>https://chatterbot.readthedocs.io&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="实战">实战&lt;/h2>
+&lt;h3 id="1获取语料">1.获取语料&lt;/h3>
+&lt;p>中文聊天语料这一块，我选择了网上大神整理的资料，这里附上github链接：&lt;br>
+&lt;a class="link" href="https://github.com/codemayq/chinese_chatbot_corpus" target="_blank" rel="noopener"
+>https://github.com/codemayq/chinese_chatbot_corpus&lt;/a>&lt;br>
+其中语料的使用大神有写了详尽的文档，务必仔细阅读后使用。&lt;/p>
+&lt;blockquote>
+&lt;p>这里笔者遇到了一个比较奇怪的问题，使用pycharm运行文档里的main.py可以顺利进行语料转换，然而直接使用命令行会报错，暂时不清楚原理&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="2使用google-colab训练">2.使用Google Colab训练&lt;/h3>
+&lt;ol>
+&lt;li>上传语料到Colab&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>这里我采用的是将下载到的语料上传到Google Drive，然后挂载Google Drive硬盘到Colab来调用&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>在Colab上安装ChatterBot&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">!pip3 install chatterbot #注意：感叹号是必须的
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">!pip3 install chatterbot-corpus #注意：感叹号是必须的
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>创建一个ChatBot&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">from chatterbot import ChatBot
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">from chatterbot.trainers import ListTrainer
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">chatbot = ChatBot(&amp;#34;susu&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">trainer = ListTrainer(chatbot)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>载入语料&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">with open(&amp;#39;chatterbot.tsv&amp;#39;, encoding=&amp;#39;utf-8&amp;#39;) as f:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> data = f.read().replace(&amp;#39;\t&amp;#39;, &amp;#39;\n&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(data[:100])
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>开始训练&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">trainer.train(data)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>这一步根据语料的数据量大小时间有长有短，个人测试为了不超过Colab的使用限制，尽量选择较小的语料库或者拆分为多个语料库多次训练比较好&lt;/p>
+&lt;/blockquote>
+&lt;p>等待训练完成后，记得将生成的db.sqlite3文件下载到本地&lt;/p></description></item></channel></rss>

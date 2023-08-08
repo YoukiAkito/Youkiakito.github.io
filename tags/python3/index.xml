@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python3 on 璃沫莫的小木屋</title><link>https://youkiakito.github.io/tags/python3/</link><description>Recent content in Python3 on 璃沫莫的小木屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youkiakito.github.io/tags/python3/index.xml" rel="self" type="application/rss+xml"/><item><title>Python3基本数据类型</title><link>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link><pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid><description>&lt;h1 id="变量">变量&lt;/h1>
+&lt;ul>
+&lt;li>Python中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。&lt;/li>
+&lt;li>在Python中，变量就是变量，它没有类型，我们所说的&amp;quot;类型&amp;quot;是变量所指的内存中对象的类型。&lt;/li>
+&lt;li>等号&lt;code>=&lt;/code>用来给变量赋值。&lt;/li>
+&lt;/ul>
+&lt;h2 id="多个变量赋值">多个变量赋值&lt;/h2>
+&lt;p>Python允许同时为多个变量赋值&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a = b = c = 1 #为多个对象赋予同一个值
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a = b = c = 1，2，&amp;#34;blog&amp;#34; #为多个对象赋予多个变量
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h1 id="标准数据类型">标准数据类型&lt;/h1>
+&lt;blockquote>
+&lt;ul>
+&lt;li>不可变数据（3 个）：Number（数字）、String（字符串）、Tuple（元组）&lt;/li>
+&lt;li>可变数据（3 个）：List（列表）、Dictionary（字典）、Set（集合）&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h2 id="number数字">Number（数字）&lt;/h2>
+&lt;p>Python3 支持 int、float、bool、complex（复数）。&lt;/p>
+&lt;p>在Python 3里，只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。&lt;/p>
+&lt;p>像大多数语言一样，数值类型的赋值和计算都是很直观的。&lt;/p>
+&lt;p>内置的 type() 函数可以用来查询变量所指的对象类型。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#输入
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a, b, c, d = 20, 5.5, True, 4+3j
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(type(a), type(b), type(c), type(d))
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#输出
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;class &amp;#39;int&amp;#39;&amp;gt; &amp;lt;class &amp;#39;float&amp;#39;&amp;gt; &amp;lt;class &amp;#39;bool&amp;#39;&amp;gt; &amp;lt;class &amp;#39;complex&amp;#39;&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>也可以用 isinstance 来判断：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a = 111
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">isinstance(a, int)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>isinstance 和 type 的区别在于：&lt;/p>
+&lt;ul>
+&lt;li>type()不会认为子类是一种父类类型。&lt;/li>
+&lt;li>isinstance()会认为子类是一种父类类型。&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>认为也可以理解为是否使用继承类型&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">class A:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">... pass
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; class B(A):
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">... pass
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; isinstance(A(), A)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; type(A()) == A
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; isinstance(B(), A)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; type(B()) == A
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">False
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>注意：Python3中，bool是int的子类，True和False可以和数字相加，True==1、False==0会返回True，但可以通过&lt;code>is&lt;/code>来判断类型。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">issubclass(bool, int)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> True==1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> False==0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> True+1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> False+1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 is True
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">False
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 is False
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">False
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;p>当你指定一个值时，Number 对象就会被创建：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">var1 = 1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">var2 = 10
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>也可以使用del语句删除一些对象引用。&lt;br>
+del语句的语法是：&lt;code>del var1[,var2[,var3[....,varN]]]&lt;/code>&lt;br>
+可以通过使用del语句删除单个或多个对象。例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">del var
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">del var_a, var_b
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="数值运算">数值运算&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 5 + 4 # 加法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">9
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 4.3 - 2 # 减法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2.3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 3 * 7 # 乘法
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">21
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 2 / 4 # 除法，得到一个浮点数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0.5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 2 // 4 # 除法，得到一个整数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 17 % 3 # 取余
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; 2 ** 5 # 乘方
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">32
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>注意：在混合计算时，Python会把整型转换成为浮点数。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="string字符串">String（字符串）&lt;/h2>
+&lt;p>Python中的字符串用单引号&lt;code>'&lt;/code>或双引号&lt;code>&amp;quot;&lt;/code>括起来，同时使用反斜杠&lt;code>\&lt;/code>转义特殊字符。&lt;br>
+字符串的截取的语法格式为：&lt;code>变量[头下标:尾下标]&lt;/code>&lt;br>
+以&lt;code>0&lt;/code>为开始值，&lt;code>-1&lt;/code>为从末尾的开始位置&lt;/p>
+&lt;p>加号&lt;code>+&lt;/code>是字符串的连接符，星号&lt;code>*&lt;/code>表示复制当前字符串，与之结合的数字为复制的次数&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">str = &amp;#39;Runoob&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str) # 输出字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[0:-1]) # 输出第一个到倒数第二个的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[0]) # 输出字符串第一个字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[2:5]) # 输出从第三个开始到第五个的字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str[2:]) # 输出从第三个开始的后的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str * 2) # 输出字符串两次，也可以写成 print (2 * str)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (str + &amp;#34;TEST&amp;#34;) # 连接字符串
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>执行后输出&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Runoob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Runoo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">R
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">noo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">noob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">RunoobRunoob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">RunoobTEST
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h2 id="list列表">List（列表）&lt;/h2>
+&lt;blockquote>
+&lt;ul>
+&lt;li>List（列表） 是 Python 中使用最频繁的数据类型。&lt;/li>
+&lt;li>列表可以完成大多数集合类的数据结构实现。列表中元素的类型可以不相同，它支持数字，字符串甚至可以包含列表（所谓嵌套）。&lt;/li>
+&lt;li>列表是写在方括号 [] 之间、用逗号分隔开的元素列表。&lt;/li>
+&lt;li>和字符串一样，列表同样可以被索引和截取，列表被截取后返回一个包含所需元素的新列表。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>列表截取的语法格式为：&lt;code>变量[头下标:尾下标]&lt;/code>&lt;br>
+加号&lt;code>+&lt;/code>是列表连接运算符，星号&lt;code>*&lt;/code>是重复操作,如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">list = [ &amp;#39;abcd&amp;#39;, 786 , 2.23, &amp;#39;runoob&amp;#39;, 70.2 ]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tinylist = [123, &amp;#39;runoob&amp;#39;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list) # 输出完整列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list[0]) # 输出列表第一个元素
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list[1:3]) # 从第二个开始输出到第三个元素
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list[2:]) # 输出从第三个元素开始的所有元素
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (tinylist * 2) # 输出两次列表
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (list + tinylist) # 连接列表
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>执行后输出：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[&amp;#39;abcd&amp;#39;, 786, 2.23, &amp;#39;runoob&amp;#39;, 70.2]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">abcd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[786, 2.23]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[2.23, &amp;#39;runoob&amp;#39;, 70.2]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[123, &amp;#39;runoob&amp;#39;, 123, &amp;#39;runoob&amp;#39;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[&amp;#39;abcd&amp;#39;, 786, 2.23, &amp;#39;runoob&amp;#39;, 70.2, 123, &amp;#39;runoob&amp;#39;]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>注意：与字符串不同，列表中的元素是可以改变的&lt;br>
+🌰&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a = [1, 2, 3, 4, 5, 6]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a[0] = 9
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a[2:5] = [13, 14, 15]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[9, 2, 13, 14, 15, 6]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a[2:5] = [] # 将对应的元素值设置为 []
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;gt;&amp;gt;&amp;gt; a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[9, 2, 6]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;p>要点：&lt;/p></description></item><item><title>Python3基本语法</title><link>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link><pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/python3%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid><description>&lt;h1 id="指定编码">指定编码&lt;/h1>
+&lt;p>&lt;code># -*- coding: utf-8 -*-&lt;/code>&lt;/p>
+&lt;h1 id="标识符">标识符&lt;/h1>
+&lt;ol>
+&lt;li>第一个字符需要是字母或下划线&lt;code>_&lt;/code>&lt;/li>
+&lt;li>其他部分可以是数字、字母或下划线&lt;code>_&lt;/code>&lt;/li>
+&lt;li>大小写敏感&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>注意：Python3中可以用中文名作为变量，非ASCII字符也是允许的&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="保留字">保留字&lt;/h1>
+&lt;p>Python标准库里有一个keyword模块，可以输出当前版本的所有保留字：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import keyword
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">keyword.kwlist
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="注释">注释&lt;/h1>
+&lt;h2 id="单行注释">单行注释&lt;/h2>
+&lt;p>使用&lt;code>#&lt;/code>字符，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#wdnmd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#34;wdnmd&amp;#34;) #这是一个注释
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="多行注释">多行注释&lt;/h2>
+&lt;p>使用&lt;code>‘’‘&lt;/code>或&lt;code>“”“&lt;/code>，用法类似于markdown的代码语法：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#wd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#nmd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#34;wdnmd&amp;#34;) #这是一个注释
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;&amp;#39;&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第一行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第二行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">‘’‘
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">“”“
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第一行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">第二行
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">”“”
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="代码块">代码块&lt;/h1>
+&lt;p>Python使用缩进来表示代码块，不需要使用&lt;code>{}&lt;/code>。
+缩进的空格数可变，但同一个代码块的缩进必须相同，否则会报错&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">if True:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;True&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">else:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;False&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">if True:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;Answer&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;True&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">else:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;Answer&amp;#34;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (&amp;#34;False&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="语句">语句&lt;/h1>
+&lt;h2 id="多行语句">多行语句&lt;/h2>
+&lt;p>通常是一行写完一条语句，但是如果语句很长，可以使用反斜杠&lt;code>\&lt;/code>来实现多行语句&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">total = item_one + \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> item_two + \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> item_three
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>如果多行语句位于&lt;code>[]``{}``()&lt;/code>中，不需要使用&lt;code>\&lt;/code>，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">total = [&amp;#39;item_one&amp;#39;, &amp;#39;item_two&amp;#39;, &amp;#39;item_three&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#39;item_four&amp;#39;, &amp;#39;item_five&amp;#39;]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;h2 id="单行多条语句">单行多条语句&lt;/h2>
+&lt;p>在同一行中使用多条语句，语句之间使用分号&lt;code>;&lt;/code>分割，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import sys; x = &amp;#39;runoob&amp;#39;; sys.stdout.write(x + &amp;#39;\n&amp;#39;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>这里按标准写法应该为：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import sys
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">x = &amp;#39;runoob&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sys.stdout.write(x + &amp;#39;\n&amp;#39;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/blockquote>
+&lt;h1 id="number类型">Number类型&lt;/h1>
+&lt;p>int(整型)：如1，表示为长整型&lt;br>
+bool(布尔)：如True、False&lt;br>
+float(浮点)：如1.23、3E-2&lt;br>
+complex(复数)：如1 + 2j、1.1 + 2.2j&lt;/p>
+&lt;h1 id="string类型">String类型&lt;/h1>
+&lt;ul>
+&lt;li>Python中的单引号&lt;code>'&lt;/code>和双引号&lt;code>&amp;quot;&lt;/code>使用完全相同&lt;/li>
+&lt;li>转义符&lt;code>\&lt;/code>&lt;/li>
+&lt;li>反斜杠可以用来转义，使用r可以让反斜杠不发生转义。如&lt;code>r&amp;quot;this is a line with \n&amp;quot;&lt;/code>则\n会显示，并不是换行。&lt;/li>
+&lt;li>按字面意义级联字符串，如&amp;quot;this &amp;quot; &amp;ldquo;is &amp;quot; &amp;ldquo;string&amp;quot;会被自动转换为&lt;code>this is string&lt;/code>。&lt;/li>
+&lt;li>字符串可以用&lt;code>+&lt;/code>运算符连接在一起，用&lt;code>*&lt;/code>运算符重复。&lt;/li>
+&lt;li>Python中的字符串有两种索引方式，从左往右以&lt;code>0&lt;/code>开始，从右往左以&lt;code>-1&lt;/code>开始。&lt;/li>
+&lt;li>Python中的字符串不能改变。&lt;/li>
+&lt;li>Python没有单独的字符类型，一个字符就是长度为 1 的字符串。&lt;/li>
+&lt;li>字符串的截取的语法格式如下：&lt;code>变量[头下标:尾下标:步长]&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">word = &amp;#39;字符串&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sentence = &amp;#34;这是一个句子。&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">paragraph = &amp;#34;&amp;#34;&amp;#34;这是一个段落，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 可以由多行组成&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>举个🌰&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">str=&amp;#39;123456789&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str) # 输出字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[0:-1]) # 输出第一个到倒数第二个的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[0]) # 输出字符串第一个字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[2:5]) # 输出从第三个开始到第五个的字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[2:]) # 输出从第三个开始后的所有字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str[1:5:2]) # 输出从第二个开始到第五个且每隔一个的字符（步长为2）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str * 2) # 输出字符串两次
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(str + &amp;#39;你好&amp;#39;) # 连接字符串
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;------------------------------&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;hello\nrunoob&amp;#39;) # 使用反斜杠(\)+n转义特殊字符
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(r&amp;#39;hello\nrunoob&amp;#39;) # 在字符串前面添加一个 r，表示原始字符串，不会发生转义
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出结果为&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">123456789
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">12345678
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">345
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">3456789
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">24
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">123456789123456789
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">123456789你好
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">------------------------------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hello
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">runoob
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">hello\nrunoob
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="空行">空行&lt;/h1>
+&lt;p>函数之间或类的方法之间用空行分隔，表示一段新的代码的开始。类和函数入口之间也用一行空行分隔，以突出函数入口的开始。&lt;/p>
+&lt;p>空行与代码缩进不同，空行并不是Python语法的一部分。书写时不插入空行，Python解释器运行也不会出错。但是空行的作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。&lt;/p>
+&lt;blockquote>
+&lt;p>记住：空行也是程序代码的一部分。&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="等待用户输入">等待用户输入&lt;/h1>
+&lt;p>执行以下程序会在按&lt;code>enter&lt;/code>键后等待用户输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">input(&amp;#34;\n\n按下 enter 键后退出。&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>&amp;ldquo;\n\n&amp;quot;在结果输出前会输出两个新的空行。一旦用户再次按下 enter 键时，程序将退出。&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="print输出">print输出&lt;/h1>
+&lt;p>print默认是换行输出的，如不需要换行需要在变量末尾加上&lt;code>end=“ ”&lt;/code>&lt;br>
+执行程序：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#!/usr/bin/python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">x=&amp;#34;a&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">y=&amp;#34;b&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 换行输出
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( x )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( y )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;---------&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 不换行输出
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( x, end=&amp;#34; &amp;#34; )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print( y, end=&amp;#34; &amp;#34; )
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">b
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---------
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a b
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="导入模块">导入模块&lt;/h1>
+&lt;p>使用&lt;code>import&lt;/code>或者&lt;code>from...import&lt;/code>来导入相应模块&lt;br>
+&lt;code>import&lt;/code>用于导入整个模块，如：&lt;code>import somemodule&lt;/code>&lt;br>
+&lt;code>from...import&lt;/code>用于倒入模块中的部分函数，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-v" data-lang="v">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">from&lt;/span> &lt;span class="nv">somemodule&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="nv">somefunction&lt;/span> &lt;span class="cp">#导入单个函数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">from&lt;/span> &lt;span class="nv">somemodule&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="nv">somefunction1&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nv">somefunction2&lt;/span> &lt;span class="cp">#导入多个函数&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">from&lt;/span> &lt;span class="nv">somemodule&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="cp">#导入全部函数&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>来个程序🌰看看：&lt;/p>
+&lt;blockquote>
+&lt;p>这是导入sys模块，引用&lt;code>argv&lt;/code>和&lt;code>path&lt;/code>时需要在前面加&lt;code>sys.&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">import sys
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;================Python import mode==========================&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#39;命令行参数为:&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">for i in sys.argv:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> print (i)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print (&amp;#39;\n python 路径为&amp;#39;,sys.path)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>这是导入sys模块中的&lt;code>argv&lt;/code>和&lt;code>path&lt;/code>，所以不需要在前面加&lt;code>sys.&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">from sys import argv,path # 导入特定的成员
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;================python from import===================================&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">print(&amp;#39;path:&amp;#39;,path)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="命令行参数">命令行参数&lt;/h1>
+&lt;p>Python可以使用-h参数查看各参数帮助信息，在终端中执行&lt;code>python -h&lt;/code>即可&lt;/p></description></item></channel></rss>

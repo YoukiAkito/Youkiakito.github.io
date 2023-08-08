@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>markdown on 璃沫莫的小木屋</title><link>https://youkiakito.github.io/tags/markdown/</link><description>Recent content in markdown on 璃沫莫的小木屋</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youkiakito.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>markdown学习</title><link>https://youkiakito.github.io/p/markdown%E5%AD%A6%E4%B9%A0/</link><pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate><guid>https://youkiakito.github.io/p/markdown%E5%AD%A6%E4%B9%A0/</guid><description>&lt;blockquote>
+&lt;p>前言：因为作者记忆力实在是差的离谱，故作此笔记以记录markdown的常用语法格式，以便需要时查找使用。如果这也能帮助到你，那真的再好不过了。具体内容包括代码、列表、链接、图片、区块等的markdown语法使用，部分内容需要查看markdown源码才能看出差别&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h1 id="markdown学习笔记">markdown学习笔记&lt;/h1>
+&lt;hr>
+&lt;h1 id="代码">代码&lt;/h1>
+&lt;p>mac上指定代码使用字符&lt;code>·&lt;/code>的英文字符即可(键盘上数字1的左边)，如：&lt;code>print()&lt;/code>.&lt;br>
+而代码区块使用四个空格或者制表符即可，如：&lt;br>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+也可以用三个字符&lt;code>·&lt;/code>的英文字符包裹一段代码，并指定一种语言（可不指定），如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&amp;lt;html&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;head&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/head&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h1 id="列表">列表&lt;/h1>
+&lt;p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记，这些标记后面要添加一个空格，然后再填写内容：&lt;/p>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ul>
+&lt;p>有序列表使用数字并加上&lt;code>.&lt;/code>号来表示，如：&lt;/p>
+&lt;ol>
+&lt;li>第一项&lt;/li>
+&lt;li>第二项&lt;/li>
+&lt;li>第三项&lt;/li>
+&lt;/ol>
+&lt;h2 id="列表嵌套">列表嵌套&lt;/h2>
+&lt;p>列表嵌套只需在子列表中的选项前面添加四个空格即可：&lt;/p>
+&lt;ol>
+&lt;li>第一项
+&lt;ul>
+&lt;li>第一项嵌套的第一个元素&lt;/li>
+&lt;li>第一项嵌套的第二个元素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>第二项
+&lt;ul>
+&lt;li>第二项嵌套的第一个元素&lt;/li>
+&lt;li>第二项嵌套的第二个元素&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h1 id="区块">区块&lt;/h1>
+&lt;p>Markdown 区块引用是在段落开头使用 &amp;gt; 符号 ，然后后面紧跟一个空格符号：&lt;/p>
+&lt;blockquote>
+&lt;p>区块引用&lt;/p>
+&lt;blockquote>
+&lt;p>一层嵌套&lt;/p>
+&lt;blockquote>
+&lt;p>二层嵌套&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>如果要在列表项目内放进区块，那么就需要在 &amp;gt; 前添加四个空格的缩进：&lt;/p>
+&lt;ul>
+&lt;li>第一项
+&lt;blockquote>
+&lt;p>第一项区块第一排&lt;br>
+第一项区块第二排&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;li>第二项
+&lt;blockquote>
+&lt;p>第二项区块第一排&lt;br>
+第二项区块第二排&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="链接">链接&lt;/h1>
+&lt;p>链接实用方法如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[链接名称](链接地址)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">或者
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;链接地址&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>举个栗子：&lt;/p>
+&lt;blockquote>
+&lt;p>这是一个链接 &lt;a class="link" href="https://www.github.com" target="_blank" rel="noopener"
+>GAYHUB&lt;/a>&lt;br>
+或者直接使用：&lt;br>
+&lt;a class="link" href="https://www.github.com" target="_blank" rel="noopener"
+>https://www.github.com&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h1 id="图片">图片&lt;/h1>
+&lt;p>图片语法格式如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">![alt属性文本](图片地址)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![alt属性文本](图片地址 &amp;#34;可选标题&amp;#34;)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>例如：&lt;br>
+无标题&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.0/img/favicon.png"
+loading="lazy"
+alt="示例图片"
+>&lt;/p>
+&lt;hr>
+&lt;p>有标题&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/YoukiAkito/blog-resource@1.0/img/favicon.png"
+loading="lazy"
+alt="示例图片"
+>&lt;/p>
+&lt;hr>
+&lt;h1 id="表格">表格&lt;/h1>
+&lt;p>制作表格使用&lt;code>｜&lt;/code>来分隔不同单元格，用&lt;code>-&lt;/code>分隔表格和其它行，如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">| 表头 | 表头 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| ---- | ---- |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>显示为&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>表头&lt;/th>
+&lt;th>表头&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>单元格&lt;/td>
+&lt;td>单元格&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>单元格&lt;/td>
+&lt;td>单元格&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="对齐方式">对齐方式&lt;/h2>
+&lt;blockquote>
+&lt;p>可以用以下方法设置对齐方式：&lt;br>
+&lt;code>-:&lt;/code>：设置内容和标题居右对齐&lt;br>
+&lt;code>:-&lt;/code>：设置内容和标题居左对齐&lt;br>
+&lt;code>:-:&lt;/code>：设置内容和标题居中对齐&lt;/p>
+&lt;/blockquote>
+&lt;p>实例如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">| 左对齐 | 右对齐 | 居中对齐 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| :---- | ----: | :----: |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| 单元格 | 单元格 | 单元格 |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">左对齐&lt;/th>
+&lt;th style="text-align:right">右对齐&lt;/th>
+&lt;th style="text-align:center">居中对齐&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">单元格&lt;/td>
+&lt;td style="text-align:right">单元格&lt;/td>
+&lt;td style="text-align:center">单元格&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">单元格&lt;/td>
+&lt;td style="text-align:right">单元格&lt;/td>
+&lt;td style="text-align:center">单元格&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>
